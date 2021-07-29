@@ -115,9 +115,128 @@ module.exports = {
                                             width: '713px',
                                             height: '247px',
                                             margin: '50px 0 0 23px',
-                                            $border: `'1px solid yellow'`
+                                            $border: `'1px solid yellow'`,
+                                            display:'flex',
+                                            justifyContent: 'space-between'
                                         }
                                     },
+                                    children:[
+                                        {
+                                            component: 'div',
+                                            props:{
+                                                class: 'container__bottom__left-top__bottom__left',
+                                                $style: {
+                                                    width:'282px',
+                                                    height:'207px',
+                                                    $border: `'1px solid red'`,
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'space-between'
+                                                }
+                                            },
+                                            children:[
+                                                {
+                                                    component: 'div',
+                                                    props:{
+                                                        class: 'container__bottom__left-top__bottom__left__first',
+                                                        $style: {
+                                                            width:'282px',
+                                                            height:'70px',
+                                                            $border: `'1px solid green'`,
+                                                            display: 'flex',
+                                                            justifyContent: 'space-between'
+                                                        }
+                                                    },
+                                                    children:[
+                                                        {
+                                                            component: 'div',
+                                                            content: 'icon',
+                                                            props:{
+                                                                class: 'container__bottom__left-top__bottom__left__first__left',
+                                                                $style: {
+                                                                    width:'66px',
+                                                                    height:'66px',
+                                                                    $border: `'1px solid green'`,
+                                                                    display: 'flex',
+                                                                    justifyContent:'center',
+                                                                    alignItems: 'center',
+                                                                    marginTop:'4px'
+                                                                }
+                                                            },
+                                                        },
+                                                        {
+                                                            component: 'div',
+                                                            content:'图标',
+                                                            props:{
+                                                                class: 'container__bottom__left-top__bottom__left__first__right',
+                                                                $style: {
+                                                                    width:'200px',
+                                                                    height:'70px',
+                                                                    $border: `'1px solid green'`,
+                                                                }
+                                                            },
+                                                        }
+                                                    ]
+
+                                                },
+                                                {
+                                                    component: 'div',
+                                                    props:{
+                                                        class: 'container__bottom__left-top__bottom__left__second',
+                                                        $style: {
+                                                            width:'282px',
+                                                            height:'70px',
+                                                            $border: `'1px solid green'`,
+                                                            display: 'flex',
+                                                            justifyContent: 'space-between'
+                                                        }
+                                                    },
+                                                    children:[
+                                                        {
+                                                            component: 'div',
+                                                            content: 'icon',
+                                                            props:{
+                                                                class: 'container__bottom__left-top__bottom__left__second__left',
+                                                                $style: {
+                                                                    width:'66px',
+                                                                    height:'66px',
+                                                                    $border: `'1px solid green'`,
+                                                                    display: 'flex',
+                                                                    justifyContent:'center',
+                                                                    alignItems: 'center',
+                                                                    marginTop:'4px'
+                                                                }
+                                                            },
+                                                        },
+                                                        {
+                                                            component: 'div',
+                                                            content:'图标',
+                                                            props:{
+                                                                class: 'container__bottom__left-top__bottom__left__second__right',
+                                                                $style: {
+                                                                    width:'200px',
+                                                                    height:'70px',
+                                                                    $border: `'1px solid green'`,
+                                                                }
+                                                            },
+                                                        }
+                                                    ]
+
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            component: 'div',
+                                            props:{
+                                                class: 'container__bottom__left-top__bottom__right',
+                                                $style: {
+                                                    width:'398px',
+                                                    height:'247px',
+                                                    $border: `'1px solid red'`,
+                                                }
+                                            }
+                                        }
+                                    ]
                                 }
                             ]
                         },
