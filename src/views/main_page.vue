@@ -45,10 +45,22 @@
           </div>
           <div class="container__bottom__right-top__bottom" :style="{width: '991px', height: '308px', border: '1px solid yellow', margin: '21px 0 0 23px', display: 'flex'}">
             <div class="container__bottom__right-top__bottom__first" :style="{width: '240px', height: '308px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
-              <div class="container__bottom__right-top__bottom__first__first" :style="{height: '75px', width: '222px', border: '1px solid green', marginTop: '25px'}" />
-              <div class="container__bottom__right-top__bottom__first__second" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '29px', marginLeft: '15px'}" />
-              <div class="container__bottom__right-top__bottom__first__third" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '16px', marginLeft: '15px'}" />
-              <div class="container__bottom__right-top__bottom__first__forth" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '16px', marginLeft: '15px'}" />
+              <div class="container__bottom__right-top__bottom__first__first" :style="{height: '75px', width: '222px', border: '1px solid green', marginTop: '25px', display: 'flex', justifyContent: 'space-between'}">
+                <div class="container__bottom__right-top__bottom__first__first__left" :style="{width: '66px', height: '66px', marginTop: '3px', border: '1px solid red'}" />
+                <div class="container__bottom__right-top__bottom__first__first__right" :style="{width: '140px', height: '75px', border: '1px solid red'}" />
+              </div>
+              <div class="container__bottom__right-top__bottom__first__second" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '29px', marginLeft: '15px', display: 'flex', justifyContent: 'space-between'}">
+                <div class="container__bottom__right-top__bottom__first__second__left" :style="{width: '36px', height: '36px', marginTop: '5px', border: '1px solid red'}" />
+                <div class="container__bottom__right-top__bottom__first__second__right" :style="{width: '140px', height: '46px', border: '1px solid red'}" />
+              </div>
+              <div class="container__bottom__right-top__bottom__first__third" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '16px', marginLeft: '15px', display: 'flex', justifyContent: 'space-between'}">
+                <div class="container__bottom__right-top__bottom__first__third__left" :style="{width: '36px', height: '36px', marginTop: '5px', border: '1px solid red'}" />
+                <div class="container__bottom__right-top__bottom__first__third__right" :style="{width: '140px', height: '46px', border: '1px solid red'}" />
+              </div>
+              <div class="container__bottom__right-top__bottom__first__forth" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '16px', marginLeft: '15px', display: 'flex', justifyContent: 'space-between'}">
+                <div class="container__bottom__right-top__bottom__first__fotrh__left" :style="{width: '36px', height: '36px', marginTop: '5px', border: '1px solid red'}" />
+                <div class="container__bottom__right-top__bottom__first__forth__right" :style="{width: '140px', height: '46px', border: '1px solid red'}" />
+              </div>
             </div>
             <div class="container__bottom__right-top__bottom__second" :style="{width: '358px', height: '308px', border: '1px solid red'}" />
             <div class="container__bottom__right-top__bottom__third" :style="{width: '389px', height: '308px', border: '1px solid red'}" />

@@ -321,9 +321,36 @@ module.exports = {
                                                             height:'75px',
                                                             width:'222px',
                                                             $border: `'1px solid green'`,
-                                                            marginTop: '25px'
+                                                            marginTop: '25px',
+                                                            display: 'flex',
+                                                            justifyContent: 'space-between',
                                                         }
-                                                    }
+                                                    },
+                                                    children: [
+                                                        {
+                                                            component: 'div',
+                                                            props:{
+                                                                class:'container__bottom__right-top__bottom__first__first__left',
+                                                                $style:{
+                                                                    width:'66px',
+                                                                    height:'66px',
+                                                                    marginTop: '3px',
+                                                                    $border: `'1px solid red'`
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            component: 'div',
+                                                            props:{
+                                                                class:'container__bottom__right-top__bottom__first__first__right',
+                                                                $style:{
+                                                                    width:'140px',
+                                                                    height:'75px',
+                                                                    $border: `'1px solid red'`
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     component: 'div',
@@ -334,9 +361,36 @@ module.exports = {
                                                             width:'192px',
                                                             $border: `'1px solid green'`,
                                                             marginTop: '29px',
-                                                            marginLeft: '15px'
+                                                            marginLeft: '15px',
+                                                            display: 'flex',
+                                                            justifyContent: 'space-between',
                                                         }
-                                                    }
+                                                    },
+                                                    children: [
+                                                        {
+                                                            component: 'div',
+                                                            props:{
+                                                                class:'container__bottom__right-top__bottom__first__second__left',
+                                                                $style:{
+                                                                    width:'36px',
+                                                                    height:'36px',
+                                                                    marginTop: '5px',
+                                                                    $border: `'1px solid red'`
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            component: 'div',
+                                                            props:{
+                                                                class:'container__bottom__right-top__bottom__first__second__right',
+                                                                $style:{
+                                                                    width:'140px',
+                                                                    height:'46px',
+                                                                    $border: `'1px solid red'`
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     component: 'div',
@@ -347,9 +401,36 @@ module.exports = {
                                                             width:'192px',
                                                             $border: `'1px solid green'`,
                                                             marginTop: '16px',
-                                                            marginLeft: '15px'
+                                                            marginLeft: '15px',
+                                                            display: 'flex',
+                                                            justifyContent: 'space-between',
                                                         }
-                                                    }
+                                                    },
+                                                    children: [
+                                                        {
+                                                            component: 'div',
+                                                            props:{
+                                                                class:'container__bottom__right-top__bottom__first__third__left',
+                                                                $style:{
+                                                                    width:'36px',
+                                                                    height:'36px',
+                                                                    marginTop: '5px',
+                                                                    $border: `'1px solid red'`
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            component: 'div',
+                                                            props:{
+                                                                class:'container__bottom__right-top__bottom__first__third__right',
+                                                                $style:{
+                                                                    width:'140px',
+                                                                    height:'46px',
+                                                                    $border: `'1px solid red'`
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     component: 'div',
@@ -360,9 +441,36 @@ module.exports = {
                                                             width:'192px',
                                                             $border: `'1px solid green'`,
                                                             marginTop: '16px',
-                                                            marginLeft: '15px'
+                                                            marginLeft: '15px',
+                                                            display: 'flex',
+                                                            justifyContent: 'space-between',
                                                         }
-                                                    }
+                                                    },
+                                                    children: [
+                                                        {
+                                                            component: 'div',
+                                                            props:{
+                                                                class:'container__bottom__right-top__bottom__first__fotrh__left',
+                                                                $style:{
+                                                                    width:'36px',
+                                                                    height:'36px',
+                                                                    marginTop: '5px',
+                                                                    $border: `'1px solid red'`
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            component: 'div',
+                                                            props:{
+                                                                class:'container__bottom__right-top__bottom__first__forth__right',
+                                                                $style:{
+                                                                    width:'140px',
+                                                                    height:'46px',
+                                                                    $border: `'1px solid red'`
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
                                                 },
                                             ]
                                         },
