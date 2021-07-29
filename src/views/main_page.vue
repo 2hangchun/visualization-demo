@@ -44,7 +44,12 @@
             <img src="" alt="pic" />
           </div>
           <div class="container__bottom__right-top__bottom" :style="{width: '991px', height: '308px', border: '1px solid yellow', margin: '21px 0 0 23px', display: 'flex'}">
-            <div class="container__bottom__right-top__bottom__first" :style="{width: '240px', height: '308px', border: '1px solid red'}" />
+            <div class="container__bottom__right-top__bottom__first" :style="{width: '240px', height: '308px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
+              <div class="container__bottom__right-top__bottom__first__first" :style="{height: '75px', width: '222px', border: '1px solid green', marginTop: '25px'}" />
+              <div class="container__bottom__right-top__bottom__first__second" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '29px', marginLeft: '15px'}" />
+              <div class="container__bottom__right-top__bottom__first__third" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '16px', marginLeft: '15px'}" />
+              <div class="container__bottom__right-top__bottom__first__forth" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '16px', marginLeft: '15px'}" />
+            </div>
             <div class="container__bottom__right-top__bottom__second" :style="{width: '358px', height: '308px', border: '1px solid red'}" />
             <div class="container__bottom__right-top__bottom__third" :style="{width: '389px', height: '308px', border: '1px solid red'}" />
           </div>

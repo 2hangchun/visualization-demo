@@ -308,8 +308,63 @@ module.exports = {
                                                     width:'240px',
                                                     height:'308px',
                                                     $border: `'1px solid red'`,
+                                                    display:'flex',
+                                                    flexDirection:'column',
                                                 }
-                                            }
+                                            },
+                                            children: [
+                                                {
+                                                    component: 'div',
+                                                    props:{
+                                                        class:'container__bottom__right-top__bottom__first__first',
+                                                        $style:{
+                                                            height:'75px',
+                                                            width:'222px',
+                                                            $border: `'1px solid green'`,
+                                                            marginTop: '25px'
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    component: 'div',
+                                                    props:{
+                                                        class:'container__bottom__right-top__bottom__first__second',
+                                                        $style:{
+                                                            height:'46px',
+                                                            width:'192px',
+                                                            $border: `'1px solid green'`,
+                                                            marginTop: '29px',
+                                                            marginLeft: '15px'
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    component: 'div',
+                                                    props:{
+                                                        class:'container__bottom__right-top__bottom__first__third',
+                                                        $style:{
+                                                            height:'46px',
+                                                            width:'192px',
+                                                            $border: `'1px solid green'`,
+                                                            marginTop: '16px',
+                                                            marginLeft: '15px'
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    component: 'div',
+                                                    props:{
+                                                        class:'container__bottom__right-top__bottom__first__forth',
+                                                        $style:{
+                                                            height:'46px',
+                                                            width:'192px',
+                                                            $border: `'1px solid green'`,
+                                                            marginTop: '16px',
+                                                            marginLeft: '15px'
+                                                        }
+                                                    }
+                                                },
+                                            ]
                                         },
                                         {
                                             component: 'div',
