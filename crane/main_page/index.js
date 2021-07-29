@@ -262,6 +262,7 @@ module.exports = {
                                             width: '976px',
                                             height: '30px',
                                             $border: `'1px solid green'`,
+                                            $margin:`'32px 0 0 22px'`
                                         }
                                     },
                                     children: [
@@ -291,11 +292,48 @@ module.exports = {
                                     props: {
                                         class: 'container__bottom__right-top__bottom',
                                         $style: {
-                                            width: '992px',
-                                            height: '414px',
+                                            width: '991px',
+                                            height: '308px',
                                             $border: `'1px solid yellow'`,
+                                            $margin:`'21px 0 0 23px'`,
+                                            display: 'flex',
                                         }
-                                    }
+                                    },
+                                    children: [
+                                        {
+                                            component: 'div',
+                                            props: {
+                                                class:'container__bottom__right-top__bottom__first',
+                                                $style:{
+                                                    width:'240px',
+                                                    height:'308px',
+                                                    $border: `'1px solid red'`,
+                                                }
+                                            }
+                                        },
+                                        {
+                                            component: 'div',
+                                            props:{
+                                                class:'container__bottom__right-top__bottom__second',
+                                                $style:{
+                                                    width:'358px',
+                                                    height:'308px',
+                                                    $border: `'1px solid red'`,
+                                                }
+                                            }
+                                        },
+                                        {
+                                            component: 'div',
+                                            props:{
+                                                class:'container__bottom__right-top__bottom__third',
+                                                $style:{
+                                                    width:'389px',
+                                                    height:'308px',
+                                                    $border: `'1px solid red'`,
+                                                }
+                                            }
+                                        }
+                                    ]
                                 }
                             ]
                         },

@@ -37,13 +37,17 @@
           </div>
         </div>
         <div class="container__bottom__right-top" :style="{width: '1018px', height: '414px', marginLeft: '34px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
-          <div class="container__bottom__right-top__top" :style="{width: '976px', height: '30px', border: '1px solid green'}">
+          <div class="container__bottom__right-top__top" :style="{width: '976px', height: '30px', border: '1px solid green', margin: '32px 0 0 22px'}">
             <div :style="{fontSize: '18px', color: '#0071fe', fontWeight: '500', letterSpacing: '0.5'}">
               xxx
             </div>
             <img src="" alt="pic" />
           </div>
-          <div class="container__bottom__right-top__bottom" :style="{width: '992px', height: '414px', border: '1px solid yellow'}" />
+          <div class="container__bottom__right-top__bottom" :style="{width: '991px', height: '308px', border: '1px solid yellow', margin: '21px 0 0 23px', display: 'flex'}">
+            <div class="container__bottom__right-top__bottom__first" :style="{width: '240px', height: '308px', border: '1px solid red'}" />
+            <div class="container__bottom__right-top__bottom__second" :style="{width: '358px', height: '308px', border: '1px solid red'}" />
+            <div class="container__bottom__right-top__bottom__third" :style="{width: '389px', height: '308px', border: '1px solid red'}" />
+          </div>
         </div>
         <div class="container__bottom__left-bottom" :style="{width: '1018px', height: '414px', marginTop: '-13px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
           <div class="container__bottom__left-bottom__top" :style="{width: '976px', height: '30px', border: '1px solid green'}">
