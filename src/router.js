@@ -9,7 +9,7 @@ export default new Router({
   base: '/',
   routes: [
     {
-      name: 'main',
+      name: 'main_page',
       path: '/',
       component: pages.main_page,
     },
