@@ -46,10 +46,15 @@ export default {
 </script>
 
 <style>
+*{
+  padding:0;
+  margin:0;
+}
 body {
+  width:1920px;
+  height:1080px;
   transform: scale(1, 1);
-  position: absolute;
-  margin: 0;
+  /*position: absolute;*/
   overflow: hidden;
 }
 html {

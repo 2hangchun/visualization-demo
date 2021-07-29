@@ -1,6 +1,6 @@
 <template>
   <div class="main_page">
-    <div :style="{fontSize: '300px', color: 'red', fontWeight: '800'}">
+    <div :style="{fontSize: '100px', color: 'red', fontWeight: '400'}">
       hello world
     </div>
   </div>

@@ -8,14 +8,35 @@ module.exports = {
     components: [
         {
             component: 'div',
-            content: 'hello world',
             props:{
+                class:'container',
                 $style: {
-                    fontSize:'300px',
-                    color:'red',
-                    fontWeight: '800'
+                    width:'100vw',
+                    height:'100vh'
                 }
-            }
+            },
+            children: [
+                {
+                    component: 'div',
+                    content: 'hello world',
+                    props:{
+                        $style:{
+                            fontSize:200,
+                            color:'blue'
+                        }
+                    }
+                },
+                {
+                    component: 'div',
+                    content: 'hello js',
+                    props:{
+                        $style:{
+                            fontSize:100,
+                            color:'green'
+                        }
+                    }
+                }
+            ]
         }
     ]
 }
