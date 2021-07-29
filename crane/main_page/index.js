@@ -11,8 +11,8 @@ module.exports = {
             props:{
                 class:'container',
                 $style: {
-                    width:'100vw',
-                    height:'100vh'
+                    width:'1920px',
+                    height:'1080px'
                 }
             },
             children: [
@@ -21,7 +21,7 @@ module.exports = {
                     content: 'hello world',
                     props:{
                         $style:{
-                            fontSize:200,
+                            fontSize:'200px',
                             color:'blue'
                         }
                     }
@@ -31,7 +31,7 @@ module.exports = {
                     content: 'hello js',
                     props:{
                         $style:{
-                            fontSize:100,
+                            fontSize:'100px',
                             color:'green'
                         }
                     }
