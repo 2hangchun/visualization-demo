@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="container__bottom" :style="{width: '1820px', height: '868px', margin: '63px 0 0 50px', display: 'flex', flexWrap: 'wrap'}">
-        <div class="container__bottom__left-top" :style="{width: '764px', height: '414px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
+        <div class="container__bottom__left-top" :style="{width: '764px', height: '414px', display: 'flex', flexDirection: 'column'}">
           <div class="container__bottom__left-top__top" :style="{width: '720px', height: '30px', border: '1px solid green', margin: '32px 0 0 22px'}">
             <div :style="{fontSize: '18px', color: '#0071fe', fontWeight: '500', letterSpacing: '0.5'}">
               xxx
@@ -148,5 +148,8 @@ export default main_page
  }
  .container__top {
    background: url("../../public/demo/image/economic-titile01.png")
+ }
+ .container__bottom__left-top{
+   background: url("../../public/demo/image/economic-box-S.png")
  }
 </style>

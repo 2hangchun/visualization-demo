@@ -69,7 +69,6 @@ module.exports = {
                                 $style: {
                                     width: '764px',
                                     height: '414px',
-                                    $border: `'1px solid red'`,
                                     display: 'flex',
                                     flexDirection: 'column'
                                 }
