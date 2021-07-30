@@ -1,6 +1,6 @@
 <template>
   <div class="main_page">
-    <div class="container" :style="{width: '1920px', height: '1080px', backgroundColor: '#192342', display: 'flex', flexDirection: 'column'}">
+    <div class="container" :style="{width: '1920px', height: '1080px', display: 'flex', flexDirection: 'column'}">
       <div class="container__top" :style="{height: '78px', width: '1920px', border: '1px solid black', display: 'flex', justifyContent: 'center'}">
         <div :style="{width: '500px', height: '36px', fontSize: '36px', fontWeight: '600', color: '#fff', textAlign: 'center'}">
           园区经济资源可视化
@@ -141,3 +141,9 @@ export const main_page = {
 }
 export default main_page
 </script>
+
+<style>
+ .container {
+   background: url("../../public/demo/image/economic-bg.png");
+ }
+</style>

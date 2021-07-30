@@ -13,7 +13,6 @@ module.exports = {
                 $style: {
                     width: '1920px',
                     height: '1080px',
-                    backgroundColor: '#192342',
                     display: 'flex',
                     flexDirection: 'column'
                 }
