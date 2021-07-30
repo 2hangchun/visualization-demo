@@ -58,7 +58,8 @@ module.exports = {
                             height: '868px',
                             $margin: `'63px 0 0 50px'`,
                             display: 'flex',
-                            flexWrap: 'wrap'
+                            flexWrap: 'wrap',
+                            alignContent:'space-between',
                         }
                     },
                     children: [
@@ -81,30 +82,23 @@ module.exports = {
                                         $style: {
                                             width: '720px',
                                             height: '30px',
-                                            border: '1px solid green',
                                             $margin: `'32px 0 0 22px'`
                                         }
                                     },
                                     children: [
                                         {
                                             component: 'div',
-                                            content: 'xxx',
+                                            content: '经济指标',
                                             props: {
                                                 $style: {
                                                     fontSize: '18px',
                                                     color: '#0071fe',
                                                     fontWeight: 500,
-                                                    letterSpacing: 0.5
+                                                    letterSpacing: 0.5,
+                                                    $margin:`'1px 0 0 4px'`
                                                 }
                                             }
                                         },
-                                        {
-                                            component: 'img',
-                                            props: {
-                                                src: '',
-                                                alt: 'pic'
-                                            }
-                                        }
                                     ]
                                 },
                                 {
@@ -150,19 +144,33 @@ module.exports = {
                                                     children:[
                                                         {
                                                             component: 'div',
-                                                            content: 'icon',
                                                             props:{
                                                                 class: 'container__bottom__left-top__bottom__left__first__left',
                                                                 $style: {
                                                                     width:'66px',
                                                                     height:'66px',
-                                                                    $border: `'1px solid green'`,
                                                                     display: 'flex',
                                                                     justifyContent:'center',
                                                                     alignItems: 'center',
-                                                                    marginTop:'4px'
+                                                                    marginTop:'4px',
+                                                                    borderRadius:'50%',
+                                                                    backgroundColor:'#19284b'
                                                                 }
                                                             },
+                                                            children:[
+                                                                {
+                                                                    component:'img',
+                                                                    props:{
+                                                                        $style:{
+                                                                            width:'30px',
+                                                                            height:'30px',
+                                                                            color:'red'
+                                                                        },
+                                                                        src:'../../public/demo/image/Icon-Currency.svg',
+                                                                        alt:'pic'
+                                                                    }
+                                                                }
+                                                            ]
                                                         },
                                                         {
                                                             component: 'div',
@@ -194,19 +202,33 @@ module.exports = {
                                                     children:[
                                                         {
                                                             component: 'div',
-                                                            content: 'icon',
                                                             props:{
                                                                 class: 'container__bottom__left-top__bottom__left__second__left',
                                                                 $style: {
                                                                     width:'66px',
                                                                     height:'66px',
-                                                                    $border: `'1px solid green'`,
                                                                     display: 'flex',
                                                                     justifyContent:'center',
                                                                     alignItems: 'center',
-                                                                    marginTop:'4px'
+                                                                    marginTop:'4px',
+                                                                    borderRadius:'50%',
+                                                                    backgroundColor:'#19284b'
                                                                 }
                                                             },
+                                                            children:[
+                                                                {
+                                                                    component:'img',
+                                                                    props:{
+                                                                        $style:{
+                                                                            width:'30px',
+                                                                            height:'30px',
+                                                                            color:'red'
+                                                                        },
+                                                                        src:'../../public/demo/image/Icon-Money.svg',
+                                                                        alt:'pic'
+                                                                    }
+                                                                }
+                                                            ]
                                                         },
                                                         {
                                                             component: 'div',
@@ -248,7 +270,6 @@ module.exports = {
                                     width: '1018px',
                                     height: '414px',
                                     marginLeft: '34px',
-                                    $border: `'1px solid red'`,
                                     display: 'flex',
                                     flexDirection: 'column'
                                 }
@@ -261,30 +282,23 @@ module.exports = {
                                         $style: {
                                             width: '976px',
                                             height: '30px',
-                                            $border: `'1px solid green'`,
                                             $margin:`'32px 0 0 22px'`
                                         }
                                     },
                                     children: [
                                         {
                                             component: 'div',
-                                            content: 'xxx',
+                                            content: '科技成果',
                                             props: {
                                                 $style: {
                                                     fontSize: '18px',
                                                     color: '#0071fe',
                                                     fontWeight: 500,
-                                                    letterSpacing: 0.5
+                                                    letterSpacing: 0.5,
+                                                    $margin:`'1px 0 0 4px'`
                                                 }
                                             }
                                         },
-                                        {
-                                            component: 'img',
-                                            props: {
-                                                src: '',
-                                                alt: 'pic'
-                                            }
-                                        }
                                     ]
                                 },
                                 {
@@ -507,8 +521,6 @@ module.exports = {
                                 $style: {
                                     width: '1018px',
                                     height: '414px',
-                                    marginTop: '-13px',
-                                    $border: `'1px solid red'`,
                                     display: 'flex',
                                     flexDirection: 'column'
                                 }
@@ -521,30 +533,23 @@ module.exports = {
                                         $style: {
                                             width: '976px',
                                             height: '30px',
-                                            $border: `'1px solid green'`,
                                             $margin:`'32px 0 0 22px'`,
                                         }
                                     },
                                     children: [
                                         {
                                             component: 'div',
-                                            content: 'xxx',
+                                            content: '项目申报',
                                             props: {
                                                 $style: {
                                                     fontSize: '18px',
                                                     color: '#0071fe',
                                                     fontWeight: 500,
-                                                    letterSpacing: 0.5
+                                                    letterSpacing: 0.5,
+                                                    $margin:`'1px 0 0 4px'`
                                                 }
                                             }
                                         },
-                                        {
-                                            component: 'img',
-                                            props: {
-                                                src: '',
-                                                alt: 'pic'
-                                            }
-                                        }
                                     ]
                                 },
                                 {
@@ -857,8 +862,6 @@ module.exports = {
                                     width: '764px',
                                     height: '414px',
                                     marginLeft: '34px',
-                                    marginTop: '-13px',
-                                    $border: `'1px solid red'`,
                                     display: 'flex',
                                     flexDirection: 'column'
                                 }
@@ -871,30 +874,23 @@ module.exports = {
                                         $style: {
                                             width: '722px',
                                             height: '30px',
-                                            $border: `'1px solid green'`,
                                             $margin:`'32px 0 0 22px'`,
                                         }
                                     },
                                     children: [
                                         {
                                             component: 'div',
-                                            content: 'xxx',
+                                            content: '经济产出行业对比',
                                             props: {
                                                 $style: {
                                                     fontSize: '18px',
                                                     color: '#0071fe',
                                                     fontWeight: 500,
-                                                    letterSpacing: 0.5
+                                                    letterSpacing: 0.5,
+                                                    $margin:`'1px 0 0 4px'`
                                                 }
                                             }
                                         },
-                                        {
-                                            component: 'img',
-                                            props: {
-                                                src: '',
-                                                alt: 'pic'
-                                            }
-                                        }
                                     ]
                                 },
                                 {

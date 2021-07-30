@@ -6,27 +6,26 @@
           园区经济资源可视化
         </div>
       </div>
-      <div class="container__bottom" :style="{width: '1820px', height: '868px', margin: '63px 0 0 50px', display: 'flex', flexWrap: 'wrap'}">
+      <div class="container__bottom" :style="{width: '1820px', height: '868px', margin: '63px 0 0 50px', display: 'flex', flexWrap: 'wrap', alignContent: 'space-between'}">
         <div class="container__bottom__left-top" :style="{width: '764px', height: '414px', display: 'flex', flexDirection: 'column'}">
-          <div class="container__bottom__left-top__top" :style="{width: '720px', height: '30px', border: '1px solid green', margin: '32px 0 0 22px'}">
-            <div :style="{fontSize: '18px', color: '#0071fe', fontWeight: '500', letterSpacing: '0.5'}">
-              xxx
+          <div class="container__bottom__left-top__top" :style="{width: '720px', height: '30px', margin: '32px 0 0 22px'}">
+            <div :style="{fontSize: '18px', color: '#0071fe', fontWeight: '500', letterSpacing: '0.5', margin: '1px 0 0 4px'}">
+              经济指标
             </div>
-            <img src="" alt="pic" />
           </div>
           <div class="container__bottom__left-top__bottom" :style="{width: '713px', height: '247px', margin: '50px 0 0 23px', border: '1px solid yellow', display: 'flex', justifyContent: 'space-between'}">
             <div class="container__bottom__left-top__bottom__left" :style="{width: '282px', height: '207px', border: '1px solid red', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}">
               <div class="container__bottom__left-top__bottom__left__first" :style="{width: '282px', height: '70px', border: '1px solid green', display: 'flex', justifyContent: 'space-between'}">
-                <div class="container__bottom__left-top__bottom__left__first__left" :style="{width: '66px', height: '66px', border: '1px solid green', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '4px'}">
-                  icon
+                <div class="container__bottom__left-top__bottom__left__first__left" :style="{width: '66px', height: '66px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '4px', borderRadius: '50%', backgroundColor: '#19284b'}">
+                  <img :style="{width: '30px', height: '30px', color: 'red'}" src="../../public/demo/image/Icon-Currency.svg" alt="pic" />
                 </div>
                 <div class="container__bottom__left-top__bottom__left__first__right" :style="{width: '200px', height: '70px', border: '1px solid green'}">
                   图标
                 </div>
               </div>
               <div class="container__bottom__left-top__bottom__left__second" :style="{width: '282px', height: '70px', border: '1px solid green', display: 'flex', justifyContent: 'space-between'}">
-                <div class="container__bottom__left-top__bottom__left__second__left" :style="{width: '66px', height: '66px', border: '1px solid green', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '4px'}">
-                  icon
+                <div class="container__bottom__left-top__bottom__left__second__left" :style="{width: '66px', height: '66px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '4px', borderRadius: '50%', backgroundColor: '#19284b'}">
+                  <img :style="{width: '30px', height: '30px', color: 'red'}" src="../../public/demo/image/Icon-Money.svg" alt="pic" />
                 </div>
                 <div class="container__bottom__left-top__bottom__left__second__right" :style="{width: '200px', height: '70px', border: '1px solid green'}">
                   图标
@@ -36,12 +35,11 @@
             <div class="container__bottom__left-top__bottom__right" :style="{width: '398px', height: '247px', border: '1px solid red'}" />
           </div>
         </div>
-        <div class="container__bottom__right-top" :style="{width: '1018px', height: '414px', marginLeft: '34px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
-          <div class="container__bottom__right-top__top" :style="{width: '976px', height: '30px', border: '1px solid green', margin: '32px 0 0 22px'}">
-            <div :style="{fontSize: '18px', color: '#0071fe', fontWeight: '500', letterSpacing: '0.5'}">
-              xxx
+        <div class="container__bottom__right-top" :style="{width: '1018px', height: '414px', marginLeft: '34px', display: 'flex', flexDirection: 'column'}">
+          <div class="container__bottom__right-top__top" :style="{width: '976px', height: '30px', margin: '32px 0 0 22px'}">
+            <div :style="{fontSize: '18px', color: '#0071fe', fontWeight: '500', letterSpacing: '0.5', margin: '1px 0 0 4px'}">
+              科技成果
             </div>
-            <img src="" alt="pic" />
           </div>
           <div class="container__bottom__right-top__bottom" :style="{width: '991px', height: '308px', border: '1px solid yellow', margin: '21px 0 0 23px', display: 'flex'}">
             <div class="container__bottom__right-top__bottom__first" :style="{width: '240px', height: '308px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
@@ -66,12 +64,11 @@
             <div class="container__bottom__right-top__bottom__third" :style="{width: '389px', height: '308px', border: '1px solid red'}" />
           </div>
         </div>
-        <div class="container__bottom__left-bottom" :style="{width: '1018px', height: '414px', marginTop: '-13px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
-          <div class="container__bottom__left-bottom__top" :style="{width: '976px', height: '30px', border: '1px solid green', margin: '32px 0 0 22px'}">
-            <div :style="{fontSize: '18px', color: '#0071fe', fontWeight: '500', letterSpacing: '0.5'}">
-              xxx
+        <div class="container__bottom__left-bottom" :style="{width: '1018px', height: '414px', display: 'flex', flexDirection: 'column'}">
+          <div class="container__bottom__left-bottom__top" :style="{width: '976px', height: '30px', margin: '32px 0 0 22px'}">
+            <div :style="{fontSize: '18px', color: '#0071fe', fontWeight: '500', letterSpacing: '0.5', margin: '1px 0 0 4px'}">
+              项目申报
             </div>
-            <img src="" alt="pic" />
           </div>
           <div class="container__bottom__left-bottom__bottom" :style="{width: '958px', height: '274px', border: '1px solid yellow', margin: '52px 0 0 30px', display: 'flex'}">
             <div class="container__bottom__left-bottom__bottom__left" :style="{width: '261px', height: '218px', marginTop: '5px', border: '1px solid red'}">
@@ -107,12 +104,11 @@
             <div class="container__bottom__left-bottom__bottom__right" :style="{width: '372px', height: '274px', marginLeft: '55px', border: '1px solid red'}" />
           </div>
         </div>
-        <div class="container__bottom__right-bottom" :style="{width: '764px', height: '414px', marginLeft: '34px', marginTop: '-13px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
-          <div class="container__bottom__right-bottom__top" :style="{width: '722px', height: '30px', border: '1px solid green', margin: '32px 0 0 22px'}">
-            <div :style="{fontSize: '18px', color: '#0071fe', fontWeight: '500', letterSpacing: '0.5'}">
-              xxx
+        <div class="container__bottom__right-bottom" :style="{width: '764px', height: '414px', marginLeft: '34px', display: 'flex', flexDirection: 'column'}">
+          <div class="container__bottom__right-bottom__top" :style="{width: '722px', height: '30px', margin: '32px 0 0 22px'}">
+            <div :style="{fontSize: '18px', color: '#0071fe', fontWeight: '500', letterSpacing: '0.5', margin: '1px 0 0 4px'}">
+              经济产出行业对比
             </div>
-            <img src="" alt="pic" />
           </div>
           <div class="container__bottom__right-bottom__bottom" :style="{width: '670px', height: '340px', border: '1px solid yellow', margin: '7px 0 0 22px'}" />
         </div>
@@ -151,5 +147,26 @@ export default main_page
  }
  .container__bottom__left-top{
    background: url("../../public/demo/image/economic-box-S.png")
+ }
+ .container__bottom__left-top__top{
+   background: url("../../public/demo/image/economic-titile02.png")
+ }
+ .container__bottom__right-top{
+   background: url("../../public/demo/image/economic-box-L.png")
+ }
+ .container__bottom__right-top__top{
+   background: url("../../public/demo/image/economic-titile03.png")
+ }
+ .container__bottom__left-bottom{
+   background: url("../../public/demo/image/economic-box-L.png")
+ }
+ .container__bottom__left-bottom__top{
+   background: url("../../public/demo/image/economic-titile03.png")
+ }
+ .container__bottom__right-bottom{
+   background: url("../../public/demo/image/economic-box-S.png")
+ }
+ .container__bottom__right-bottom__top{
+   background: url("../../public/demo/image/economic-titile02.png")
  }
 </style>
