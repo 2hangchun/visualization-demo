@@ -665,10 +665,27 @@ module.exports = {
                                                                 $style: {
                                                                     width: '66px',
                                                                     height:'66px',
-                                                                    $border: `'1px solid green'`,
-                                                                    marginTop:'4px'
+                                                                    marginTop:'4px',
+                                                                    display: 'flex',
+                                                                    justifyContent: 'center',
+                                                                    alignItems: 'center',
+                                                                    borderRadius:'50%',
+                                                                    backgroundColor:'#19284b'
                                                                 }
-                                                            }
+                                                            },
+                                                            children:[
+                                                                {
+                                                                    component:'img',
+                                                                    props:{
+                                                                        $style:{
+                                                                            width:'30px',
+                                                                            height:'30px',
+                                                                        },
+                                                                        src:'../../public/demo/image/Icon-Project02.svg',
+                                                                        alt:'pic'
+                                                                    }
+                                                                }
+                                                            ]
                                                         },
                                                         {
                                                             component: 'div',
@@ -717,9 +734,27 @@ module.exports = {
                                                                             width: '36px',
                                                                             height: '36px',
                                                                             marginTop:'5px',
-                                                                            $border: `'1px solid red'`,
+                                                                            display: 'flex',
+                                                                            justifyContent:'center',
+                                                                            alignItems: 'center',
+                                                                            borderRadius:'50%',
+                                                                            backgroundColor:'#19284b',
                                                                         }
-                                                                    }
+                                                                    },
+                                                                    children:[
+                                                                        {
+                                                                            component:'img',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    width:'14px',
+                                                                                    height:'14px',
+                                                                                },
+                                                                                src:'../../public/demo/image/Icon-Project.svg',
+                                                                                alt:'pic'
+                                                                            }
+                                                                        }
+                                                                    ]
+
                                                                 },
                                                                 {
                                                                     component:'div',
@@ -755,9 +790,27 @@ module.exports = {
                                                                             width: '36px',
                                                                             height: '36px',
                                                                             marginTop:'5px',
-                                                                            $border: `'1px solid red'`,
+                                                                            display: 'flex',
+                                                                            justifyContent:'center',
+                                                                            alignItems: 'center',
+                                                                            borderRadius:'50%',
+                                                                            backgroundColor:'#19284b',
                                                                         }
-                                                                    }
+                                                                    },
+                                                                    children:[
+                                                                        {
+                                                                            component:'img',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    width:'14px',
+                                                                                    height:'14px',
+                                                                                },
+                                                                                src:'../../public/demo/image/Icon-Tech.svg',
+                                                                                alt:'pic'
+                                                                            }
+                                                                        }
+                                                                    ]
+
                                                                 },
                                                                 {
                                                                     component:'div',
@@ -809,9 +862,27 @@ module.exports = {
                                                                             width: '36px',
                                                                             height: '36px',
                                                                             marginTop:'5px',
-                                                                            $border: `'1px solid red'`,
+                                                                            display: 'flex',
+                                                                            justifyContent:'center',
+                                                                            alignItems: 'center',
+                                                                            borderRadius:'50%',
+                                                                            backgroundColor:'#19284b',
                                                                         }
-                                                                    }
+                                                                    },
+                                                                    children:[
+                                                                        {
+                                                                            component:'img',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    width:'14px',
+                                                                                    height:'14px',
+                                                                                },
+                                                                                src:'../../public/demo/image/Icon-Sort.svg',
+                                                                                alt:'pic'
+                                                                            }
+                                                                        }
+                                                                    ]
+
                                                                 },
                                                                 {
                                                                     component:'div',
@@ -847,9 +918,27 @@ module.exports = {
                                                                             width: '36px',
                                                                             height: '36px',
                                                                             marginTop:'5px',
-                                                                            $border: `'1px solid red'`,
+                                                                            display: 'flex',
+                                                                            justifyContent:'center',
+                                                                            alignItems: 'center',
+                                                                            borderRadius:'50%',
+                                                                            backgroundColor:'#19284b',
                                                                         }
-                                                                    }
+                                                                    },
+                                                                    children:[
+                                                                        {
+                                                                            component:'img',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    width:'14px',
+                                                                                    height:'14px',
+                                                                                },
+                                                                                src:'../../public/demo/image/Icon-Sapling.svg',
+                                                                                alt:'pic'
+                                                                            }
+                                                                        }
+                                                                    ]
+
                                                                 },
                                                                 {
                                                                     component:'div',
@@ -895,13 +984,16 @@ module.exports = {
                                                 },
                                                 {
                                                     component:'div',
+                                                    content:'年度申报成功率',
                                                     props:{
                                                         class:'container__bottom__left-bottom__bottom__middle__bottom',
                                                         $style:{
                                                             width:'230px',
                                                             height:'16px',
-                                                            $border: `'1px solid white'`,
-
+                                                            color:'#fff',
+                                                            fontSize:'16px',
+                                                            fontWeight:400,
+                                                            textAlign: 'center',
                                                         }
                                                     }
                                                 }
