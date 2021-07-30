@@ -1,12 +1,12 @@
 <template>
   <div class="main_page">
     <div class="container" :style="{width: '1920px', height: '1080px', display: 'flex', flexDirection: 'column'}">
-      <div class="container__top" :style="{height: '78px', width: '1920px', border: '1px solid black', display: 'flex', justifyContent: 'center'}">
-        <div :style="{width: '500px', height: '36px', fontSize: '36px', fontWeight: '600', color: '#fff', textAlign: 'center'}">
+      <div class="container__top" :style="{height: '78px', width: '1920px', display: 'flex', justifyContent: 'center'}">
+        <div :style="{width: '500px', height: '36px', fontSize: '36px', fontWeight: '600', lineHeight: '36px', color: '#fff', textAlign: 'center', marginTop: '23px', letterSpacing: '1'}">
           园区经济资源可视化
         </div>
       </div>
-      <div class="container__bottom" :style="{width: '1820px', height: '1010px', margin: '63px 0 0 50px', display: 'flex', flexWrap: 'wrap'}">
+      <div class="container__bottom" :style="{width: '1820px', height: '868px', margin: '63px 0 0 50px', display: 'flex', flexWrap: 'wrap'}">
         <div class="container__bottom__left-top" :style="{width: '764px', height: '414px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
           <div class="container__bottom__left-top__top" :style="{width: '720px', height: '30px', border: '1px solid green', margin: '32px 0 0 22px'}">
             <div :style="{fontSize: '18px', color: '#0071fe', fontWeight: '500', letterSpacing: '0.5'}">
@@ -145,5 +145,8 @@ export default main_page
 <style>
  .container {
    background: url("../../public/demo/image/economic-bg.png");
+ }
+ .container__top {
+   background: url("../../public/demo/image/economic-titile01.png")
  }
 </style>

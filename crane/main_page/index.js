@@ -25,9 +25,8 @@ module.exports = {
                         $style: {
                             height: '78px',
                             width: '1920px',
-                            $border: `'1px solid black'`,
                             display: 'flex',
-                            justifyContent: 'center'
+                            justifyContent: 'center',
                         }
                     },
                     children: [
@@ -40,8 +39,11 @@ module.exports = {
                                     height: '36px',
                                     fontSize: '36px',
                                     fontWeight: '600',
+                                    lineHeight:'36px',
                                     color: '#fff',
-                                    textAlign: 'center'
+                                    textAlign: 'center',
+                                    marginTop:'23px',
+                                    letterSpacing:1
                                 }
                             }
                         },
@@ -53,7 +55,7 @@ module.exports = {
                         class: 'container__bottom',
                         $style: {
                             width: '1820px',
-                            height: '1010px',
+                            height: '868px',
                             $margin: `'63px 0 0 50px'`,
                             display: 'flex',
                             flexWrap: 'wrap'
