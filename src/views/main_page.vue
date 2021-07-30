@@ -17,7 +17,7 @@
             <div class="container__bottom__left-top__bottom__left" :style="{width: '282px', height: '207px', border: '1px solid red', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}">
               <div class="container__bottom__left-top__bottom__left__first" :style="{width: '282px', height: '70px', border: '1px solid green', display: 'flex', justifyContent: 'space-between'}">
                 <div class="container__bottom__left-top__bottom__left__first__left" :style="{width: '66px', height: '66px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '4px', borderRadius: '50%', backgroundColor: '#19284b'}">
-                  <img :style="{width: '30px', height: '30px', color: 'red'}" src="../../public/demo/image/Icon-Currency.svg" alt="pic" />
+                  <img :style="{width: '30px', height: '30px'}" src="../../public/demo/image/Icon-Currency.svg" alt="pic" />
                 </div>
                 <div class="container__bottom__left-top__bottom__left__first__right" :style="{width: '200px', height: '70px', border: '1px solid green'}">
                   图标
@@ -25,7 +25,7 @@
               </div>
               <div class="container__bottom__left-top__bottom__left__second" :style="{width: '282px', height: '70px', border: '1px solid green', display: 'flex', justifyContent: 'space-between'}">
                 <div class="container__bottom__left-top__bottom__left__second__left" :style="{width: '66px', height: '66px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '4px', borderRadius: '50%', backgroundColor: '#19284b'}">
-                  <img :style="{width: '30px', height: '30px', color: 'red'}" src="../../public/demo/image/Icon-Money.svg" alt="pic" />
+                  <img :style="{width: '30px', height: '30px'}" src="../../public/demo/image/Icon-Money.svg" alt="pic" />
                 </div>
                 <div class="container__bottom__left-top__bottom__left__second__right" :style="{width: '200px', height: '70px', border: '1px solid green'}">
                   图标
@@ -44,19 +44,27 @@
           <div class="container__bottom__right-top__bottom" :style="{width: '991px', height: '308px', border: '1px solid yellow', margin: '21px 0 0 23px', display: 'flex'}">
             <div class="container__bottom__right-top__bottom__first" :style="{width: '240px', height: '308px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
               <div class="container__bottom__right-top__bottom__first__first" :style="{height: '75px', width: '222px', border: '1px solid green', marginTop: '25px', display: 'flex', justifyContent: 'space-between'}">
-                <div class="container__bottom__right-top__bottom__first__first__left" :style="{width: '66px', height: '66px', marginTop: '3px', border: '1px solid red'}" />
+                <div class="container__bottom__right-top__bottom__first__first__left" :style="{width: '66px', height: '66px', marginTop: '3px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#19284b'}">
+                  <img :style="{width: '30px', height: '30px'}" src="../../public/demo/image/Icon-Currency.svg" alt="pic" />
+                </div>
                 <div class="container__bottom__right-top__bottom__first__first__right" :style="{width: '140px', height: '75px', border: '1px solid red'}" />
               </div>
               <div class="container__bottom__right-top__bottom__first__second" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '29px', marginLeft: '15px', display: 'flex', justifyContent: 'space-between'}">
-                <div class="container__bottom__right-top__bottom__first__second__left" :style="{width: '36px', height: '36px', marginTop: '5px', border: '1px solid red'}" />
+                <div class="container__bottom__right-top__bottom__first__second__left" :style="{width: '36px', height: '36px', marginTop: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#19284b'}">
+                  <img :style="{width: '14px', height: '14px'}" src="../../public/demo/image/Icon-Book.svg" alt="pic" />
+                </div>
                 <div class="container__bottom__right-top__bottom__first__second__right" :style="{width: '140px', height: '46px', border: '1px solid red'}" />
               </div>
               <div class="container__bottom__right-top__bottom__first__third" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '16px', marginLeft: '15px', display: 'flex', justifyContent: 'space-between'}">
-                <div class="container__bottom__right-top__bottom__first__third__left" :style="{width: '36px', height: '36px', marginTop: '5px', border: '1px solid red'}" />
+                <div class="container__bottom__right-top__bottom__first__third__left" :style="{width: '36px', height: '36px', marginTop: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#19284b'}">
+                  <img :style="{width: '14px', height: '14px'}" src="../../public/demo/image/Icon-Application.svg" alt="pic" />
+                </div>
                 <div class="container__bottom__right-top__bottom__first__third__right" :style="{width: '140px', height: '46px', border: '1px solid red'}" />
               </div>
               <div class="container__bottom__right-top__bottom__first__forth" :style="{height: '46px', width: '192px', border: '1px solid green', marginTop: '16px', marginLeft: '15px', display: 'flex', justifyContent: 'space-between'}">
-                <div class="container__bottom__right-top__bottom__first__fotrh__left" :style="{width: '36px', height: '36px', marginTop: '5px', border: '1px solid red'}" />
+                <div class="container__bottom__right-top__bottom__first__forth__left" :style="{width: '36px', height: '36px', marginTop: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#19284b'}">
+                  <img :style="{width: '14px', height: '14px'}" src="../../public/demo/image/Icon-Rocket.svg" alt="pic" />
+                </div>
                 <div class="container__bottom__right-top__bottom__first__forth__right" :style="{width: '140px', height: '46px', border: '1px solid red'}" />
               </div>
             </div>

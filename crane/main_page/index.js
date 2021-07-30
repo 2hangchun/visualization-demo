@@ -164,7 +164,6 @@ module.exports = {
                                                                         $style:{
                                                                             width:'30px',
                                                                             height:'30px',
-                                                                            color:'red'
                                                                         },
                                                                         src:'../../public/demo/image/Icon-Currency.svg',
                                                                         alt:'pic'
@@ -222,7 +221,6 @@ module.exports = {
                                                                         $style:{
                                                                             width:'30px',
                                                                             height:'30px',
-                                                                            color:'red'
                                                                         },
                                                                         src:'../../public/demo/image/Icon-Money.svg',
                                                                         alt:'pic'
@@ -349,9 +347,26 @@ module.exports = {
                                                                     width:'66px',
                                                                     height:'66px',
                                                                     marginTop: '3px',
-                                                                    $border: `'1px solid red'`
+                                                                    display: 'flex',
+                                                                    justifyContent:'center',
+                                                                    alignItems: 'center',
+                                                                    borderRadius:'50%',
+                                                                    backgroundColor:'#19284b',
                                                                 }
-                                                            }
+                                                            },
+                                                            children:[
+                                                                {
+                                                                    component:'img',
+                                                                    props:{
+                                                                        $style:{
+                                                                            width:'30px',
+                                                                            height:'30px',
+                                                                        },
+                                                                        src:'../../public/demo/image/Icon-Currency.svg',
+                                                                        alt:'pic'
+                                                                    }
+                                                                }
+                                                            ]
                                                         },
                                                         {
                                                             component: 'div',
@@ -389,9 +404,27 @@ module.exports = {
                                                                     width:'36px',
                                                                     height:'36px',
                                                                     marginTop: '5px',
-                                                                    $border: `'1px solid red'`
+                                                                    display: 'flex',
+                                                                    justifyContent:'center',
+                                                                    alignItems: 'center',
+                                                                    borderRadius:'50%',
+                                                                    backgroundColor:'#19284b',
                                                                 }
-                                                            }
+                                                            },
+                                                            children:[
+                                                                {
+                                                                    component:'img',
+                                                                    props:{
+                                                                        $style:{
+                                                                            width:'14px',
+                                                                            height:'14px',
+                                                                        },
+                                                                        src:'../../public/demo/image/Icon-Book.svg',
+                                                                        alt:'pic'
+                                                                    }
+                                                                }
+                                                            ]
+
                                                         },
                                                         {
                                                             component: 'div',
@@ -429,9 +462,27 @@ module.exports = {
                                                                     width:'36px',
                                                                     height:'36px',
                                                                     marginTop: '5px',
-                                                                    $border: `'1px solid red'`
+                                                                    display: 'flex',
+                                                                    justifyContent:'center',
+                                                                    alignItems: 'center',
+                                                                    borderRadius:'50%',
+                                                                    backgroundColor:'#19284b',
                                                                 }
-                                                            }
+                                                            },
+                                                            children:[
+                                                                {
+                                                                    component:'img',
+                                                                    props:{
+                                                                        $style:{
+                                                                            width:'14px',
+                                                                            height:'14px',
+                                                                        },
+                                                                        src:'../../public/demo/image/Icon-Application.svg',
+                                                                        alt:'pic'
+                                                                    }
+                                                                }
+                                                            ]
+
                                                         },
                                                         {
                                                             component: 'div',
@@ -464,14 +515,32 @@ module.exports = {
                                                         {
                                                             component: 'div',
                                                             props:{
-                                                                class:'container__bottom__right-top__bottom__first__fotrh__left',
+                                                                class:'container__bottom__right-top__bottom__first__forth__left',
                                                                 $style:{
                                                                     width:'36px',
                                                                     height:'36px',
                                                                     marginTop: '5px',
-                                                                    $border: `'1px solid red'`
+                                                                    display: 'flex',
+                                                                    justifyContent:'center',
+                                                                    alignItems: 'center',
+                                                                    borderRadius:'50%',
+                                                                    backgroundColor:'#19284b',
                                                                 }
-                                                            }
+                                                            },
+                                                            children:[
+                                                                {
+                                                                    component:'img',
+                                                                    props:{
+                                                                        $style:{
+                                                                            width:'14px',
+                                                                            height:'14px',
+                                                                        },
+                                                                        src:'../../public/demo/image/Icon-Rocket.svg',
+                                                                        alt:'pic'
+                                                                    }
+                                                                }
+                                                            ]
+
                                                         },
                                                         {
                                                             component: 'div',
