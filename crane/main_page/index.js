@@ -967,7 +967,6 @@ module.exports = {
                                                     height: '222px',
                                                     marginTop: '2px',
                                                     marginLeft: '40px',
-                                                    $border: `'1px solid red'`,
                                                 }
                                             },
                                             children: [
@@ -1123,7 +1122,6 @@ module.exports = {
                                         $style: {
                                             width: '670px',
                                             height: '340px',
-                                            $border: `'1px solid yellow'`,
                                             $margin: `'7px 0 0 22px'`,
                                         }
                                     },
@@ -1131,6 +1129,7 @@ module.exports = {
                                         {
                                             component: 'v-chart',
                                             props:{
+                                                ref:'chart1',
                                                 $option:{
                                                     $title:`{
                                                         text: '经济产出占比',
@@ -1179,6 +1178,16 @@ module.exports = {
                                                     }`
                                                 }
                                             },
+                                            events: {
+                                                mouseover:{
+                                                    params:['$event'],
+                                                    actions:['fn1($event)']
+                                                },
+                                                mouseout:{
+                                                    params:['$event'],
+                                                    actions:['fn2($event)']
+                                                }
+                                            }
                                         }
                                     ]
                                 }

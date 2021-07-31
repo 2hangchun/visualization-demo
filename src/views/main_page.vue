@@ -115,7 +115,7 @@
                 </div>
               </div>
             </div>
-            <div class="container__bottom__left-bottom__bottom__middle" :style="{width: '230px', height: '222px', marginTop: '2px', marginLeft: '40px', border: '1px solid red'}">
+            <div class="container__bottom__left-bottom__bottom__middle" :style="{width: '230px', height: '222px', marginTop: '2px', marginLeft: '40px'}">
               <div class="container__bottom__left-bottom__bottom__middle__top" :style="{width: '230px', height: '206px'}">
                 <v-chart :option="{tooltip: {show: 'true', trigger: 'item'}, series: [
                                                                                       {
@@ -181,8 +181,8 @@
               经济产出行业对比
             </div>
           </div>
-          <div class="container__bottom__right-bottom__bottom" :style="{width: '670px', height: '340px', border: '1px solid yellow', margin: '7px 0 0 22px'}">
-            <v-chart :option="{title: {
+          <div class="container__bottom__right-bottom__bottom" :style="{width: '670px', height: '340px', margin: '7px 0 0 22px'}">
+            <v-chart @mouseover="($event)=>[fn1($event)]" @mouseout="($event)=>[fn2($event)]" ref="chart1" :option="{title: {
                                                                   text: '经济产出占比',
                                                                   left:'24%',
                                                                   top:'center',
@@ -286,6 +286,22 @@ export const main_page = {
     },
     f3(params){
       return `${params} ${this.data1.find(item=>item.name===params).value}%`
+    },
+    fn1(params){
+      const echartsInstance=this.$refs.chart1
+      echartsInstance.dispatchAction({
+        type:'select',
+        seriesIndex:params.seriesIndex,
+        name:params.name
+      })
+    },
+    fn2(params){
+      const echartsInstance=this.$refs.chart1
+      echartsInstance.dispatchAction({
+        type:'unselect',
+        seriesIndex:params.seriesIndex,
+        name:params.name
+      })
     }
   }
 }
