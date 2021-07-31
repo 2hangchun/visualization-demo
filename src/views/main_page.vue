@@ -116,7 +116,58 @@
               </div>
             </div>
             <div class="container__bottom__left-bottom__bottom__middle" :style="{width: '230px', height: '222px', marginTop: '2px', marginLeft: '40px', border: '1px solid red'}">
-              <div class="container__bottom__left-bottom__bottom__middle__top" :style="{width: '230px', height: '206px', border: '1px solid white'}" />
+              <div class="container__bottom__left-bottom__bottom__middle__top" :style="{width: '230px', height: '206px'}">
+                <v-chart :option="{tooltip: {show: 'true', trigger: 'item'}, series: [
+                                                                                      {
+                                                                                          type: 'pie',
+                                                                                          radius: ['68%', '78%'],
+                                                                                          avoidLabelOverlap: false,
+                                                                                          hoverAnimation: false,
+                                                                                          labelLine: {
+                                                                                              show: false
+                                                                                          },
+                                                                                          data: [
+                                                                                              {
+                                                                                                  value: 75.4,
+                                                                                                  label: {
+                                                                                                      show: true,
+                                                                                                      position: 'center',
+                                                                                                      fontSize: 30,
+                                                                                                      fontWeight: 400,
+                                                                                                      formatter: '{d}%',
+                                                                                                      color: '#fff'
+                                                                                                  },
+                                                                                                  tooltip: {
+                                                                                                      backgroundColor: 'rgba(50,50,50,.9)',
+                                                                                                      textStyle: {
+                                                                                                          color: '#fff'
+                                                                                                      },
+                                                                                                      formatter:f1,
+                                                                                                      position:p1
+                                                                                                  },
+                                                                                                  itemStyle: {
+                                                                                                      color: '#007afe'
+                                                                                                  },
+                                                                                                  emphasis: {
+                                                                                                      scale: true,
+                                                                                                      scaleSize: 3,
+                                                                                                  }
+                                                                                              },
+                                                                                              {
+                                                                                                  value: 24.6,
+                                                                                                  itemStyle: {
+                                                                                                      color: '#007afe',
+                                                                                                      opacity: 0.1
+                                                                                                  },
+                                                                                                  tooltip: {
+                                                                                                      show: false
+                                                                                                  }
+                                                                                              },
+              
+                                                                                          ]
+                                                                                      }
+                                                                                  ]}" />
+              </div>
               <div class="container__bottom__left-bottom__bottom__middle__bottom" :style="{width: '230px', height: '16px', color: '#fff', fontSize: '16px', fontWeight: '400', textAlign: 'center'}">
                 年度申报成功率
               </div>
@@ -130,7 +181,49 @@
               经济产出行业对比
             </div>
           </div>
-          <div class="container__bottom__right-bottom__bottom" :style="{width: '670px', height: '340px', border: '1px solid yellow', margin: '7px 0 0 22px'}" />
+          <div class="container__bottom__right-bottom__bottom" :style="{width: '670px', height: '340px', border: '1px solid yellow', margin: '7px 0 0 22px'}">
+            <v-chart :option="{title: {
+                                                                  text: '经济产出占比',
+                                                                  left:'24%',
+                                                                  top:'center',
+                                                                  textStyle:{
+                                                                      fontSize:'18px',
+                                                                      fontWeight:400,
+                                                                      color:'#fff',
+                                                                      lineHeight:1.4,
+                                                                      textAlign:'center'
+                                                                  }
+                                                              }, legend: {
+                                                                  type: 'plain',
+                                                                  icon: 'circle',
+                                                                  orient: 'vertical',
+                                                                  right: 10,
+                                                                  top: '20%',
+                                                                  align: 'left',
+                                                                  itemGap: 20,
+                                                                  textStyle:{
+                                                                      color:'#fff',
+                                                                      fontSize:'16px',
+                                                                      fontWeight:400
+                                                                  },
+                                                                  formatter:f3
+                                                              }, tooltip: {
+                                                                  show:true,
+                                                                  formatter:f2
+                                                              }, color: ['#007afe','#dece84','#8f919f','#2dc4b6','#f7b26f','#3fa7d6'], series: {
+                                                                  data:data1,
+                                                                  type:'pie',
+                                                                  label:{
+                                                                      show:false,
+                                                                  },
+                                                                  center:['33%','50%'],
+                                                                  emphasis:{
+                                                                      scale:false
+                                                                  },
+                                                                  selectedMode:'single',
+                                                                  radius:['42%','60%'],
+                                                              }}" />
+          </div>
         </div>
       </div>
     </div>
@@ -141,19 +234,60 @@
 import BuiltInMixin from '../mixins/built_in'
 import 'echarts'
 import VChart from 'vue-echarts'
+
 export const main_page = {
   mixins: [BuiltInMixin],
 
   components: {
-    'v-chart':VChart
+    'v-chart': VChart
   },
 
   data () {
     return {
-      craneStates: {
-      },
+      craneStates: {},
+      data1:[
+        {
+          name:'电气机械制造类企业',
+          value:29,
+        },
+        {
+          name:'计算机制造类企业',
+          value:26,
+        },
+        {
+          name:'纺织类企业',
+          value:20,
+        },
+        {
+          name:'通用设备制造类企业',
+          value:12,
+        },
+        {
+          name:'家具制造类企业',
+          value:7,
+        },
+        {
+          name:'医药制造类企业',
+          value:6,
+        },
+      ]
     }
   },
+  methods: {
+    f1(params) {
+      return `<span style="display:inline-block;border-radius:50%;width:10px;height:10px;background-color:${params.color}"></span> 年度申报成功率：75.4%`
+    },
+    p1(pos) {
+      return pos.map(item => item + 20)
+    },
+    f2(params){
+      const {marker,name,percent} = params
+      return `${marker}${name}:${percent}%`
+    },
+    f3(params){
+      return `${params} ${this.data1.find(item=>item.name===params).value}%`
+    }
+  }
 }
 export default main_page
 </script>
