@@ -564,9 +564,138 @@ module.exports = {
                                                 $style: {
                                                     width: '358px',
                                                     height: '308px',
-                                                    $border: `'1px solid red'`,
                                                 }
-                                            }
+                                            },
+                                            children: [
+                                                {
+                                                    component: 'v-chart',
+                                                    props:{
+                                                        $option:{
+                                                            $legend: `{
+                                                                show: true,
+                                                                type: 'plain',
+                                                                bottom: 0,
+                                                                icon:'circle',
+                                                                textStyle:{
+                                                                    color:'#fff',
+                                                                    fontSize:'14px'
+                                                                }
+                                                            }`,
+                                                            $tooltip: `{
+                                                                show: true,
+                                                            }`,
+                                                            $grid:`{
+                                                                width: '310px',
+                                                                height: '175px',
+                                                                top: '35px',
+                                                                left: '40px'
+                                                            }`,
+                                                            $xAxis:`{
+                                                                type: 'category',
+                                                                data: ['基础理论成果', '应用技术成果', '软科学成果'],
+                                                                axisLabel: {
+                                                                    show: true,
+                                                                    rotate: 45,
+                                                                    color: '#5992d1',
+                                                                    fontSize: '14px'
+                                                                },
+                                                                axisLine: {
+                                                                    lineStyle: {
+                                                                        color: '#0650a7'
+                                                                    }
+                                                                },
+                                                                axisTick: {
+                                                                    show: true,
+                                                                },
+                                                            }`,
+                                                            $yAxis: `{
+                                                                type: 'value',
+                                                                show: true,
+                                                                name: '个',
+                                                                nameTextStyle: {
+                                                                    color: '#5992d1',
+                                                                    fontSize: '14px',
+                                                                    // align:'right',
+                                                                    padding: [0, 40, 0, 0],
+                                                                    verticalAlign: 'middle'
+                                                                },
+                                                                nameGap: 20,
+                                                                axisLine: {
+                                                                    show: true,
+                                                                    lineStyle: {
+                                                                        color: '#0650a7'
+                                                                    }
+                                                                },
+                                                                axisLabel: {
+                                                                    color: '#5992d1',
+                                                                    fontSize: '14px',
+                                                                    margin: 10
+                                                                },
+                                                                axisTick: {
+                                                                    show: true
+                                                                },
+                                                                splitLine: {
+                                                                    show: false
+                                                                }
+                                                            }`,
+                                                            $series: `[
+                                                                {
+                                                                    type: 'bar',
+                                                                    name: '2017',
+                                                                    data: [450, 400, 500],
+                                                                    barGap: 0,
+                                                                    barWidth: '20px',
+                                                                    itemStyle: {
+                                                                        color: {
+                                                                            type: 'linear',
+                                                                            x: 0,
+                                                                            y: 0,
+                                                                            x2: 0,
+                                                                            y2: 1,
+                                                                            colorStops: [
+                                                                                {
+                                                                                    offset: 0,
+                                                                                    color: '#157df9'
+                                                                                },
+                                                                                {
+                                                                                    offset: 1,
+                                                                                    color: '#1257ab',
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    type: 'bar',
+                                                                    name: '2018',
+                                                                    data: [800, 700, 600],
+                                                                    barGap: 0,
+                                                                    barWidth: '20px',
+                                                                    itemStyle: {
+                                                                        color: {
+                                                                            type: 'linear',
+                                                                            x: 0,
+                                                                            y: 0,
+                                                                            x2: 0,
+                                                                            y2: 1,
+                                                                            colorStops: [
+                                                                                {
+                                                                                    offset: 0,
+                                                                                    color: '#dbcb87'
+                                                                                },
+                                                                                {
+                                                                                    offset: 1,
+                                                                                    color: '#908867',
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]`
+                                                        }
+                                                    }
+                                                }
+                                            ]
                                         },
                                         {
                                             component: 'div',
