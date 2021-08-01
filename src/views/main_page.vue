@@ -69,7 +69,39 @@
               </div>
             </div>
             <div class="container__bottom__right-top__bottom__second" :style="{width: '358px', height: '308px', border: '1px solid red'}" />
-            <div class="container__bottom__right-top__bottom__third" :style="{width: '389px', height: '308px', border: '1px solid red'}" />
+            <div class="container__bottom__right-top__bottom__third" :style="{width: '389px', height: '308px'}">
+              <v-chart @mouseover="($event)=>[fn3($event)]" @mouseout="($event)=>[fn4($event)]" ref="chart2" :option="{tooltip: {
+                                                                    show:true,
+                                                                    backgroundColor:'rgba(50,50,50,0.7)',
+                                                                    textStyle:{
+                                                                    color:'#fff',
+                                                                    },
+                                                                    formatter:f4
+                                                                }, color: ['#007afe','#dece84','#8f919f','#2dc4b6','#f7b26f','#3fa7d6'], series: {
+                                                                            data:data2,
+                                                                            type:'pie',
+                                                                            label:{
+                                                                                show:true,
+                                                                                align:'left',
+                                                                                textStyle:{
+                                                                                    color:'#fff',
+                                                                                    fontSize:'12px',
+                                                                                },
+                                                                                formatter:f5
+                                                                            },
+                                                                            labelLine:{
+                                                                                lineStyle:{
+                                                                                    color:'#0650a7',
+                                                                                    width:1
+                                                                                }
+                                                                            },
+                                                                            emphasis:{
+                                                                                scale:false
+                                                                            },
+                                                                            selectedMode:'single',
+                                                                            radius:[0,'50%']
+                                                                        }}" />
+            </div>
           </div>
         </div>
         <div class="container__bottom__left-bottom" :style="{width: '1018px', height: '414px', display: 'flex', flexDirection: 'column'}">
@@ -209,6 +241,10 @@
                                                                   formatter:f3
                                                               }, tooltip: {
                                                                   show:true,
+                                                                  backgroundColor:'rgba(50,50,50,0.7)',
+                                                                  textStyle:{
+                                                                  color:'#fff',
+                                                                  },
                                                                   formatter:f2
                                                               }, color: ['#007afe','#dece84','#8f919f','#2dc4b6','#f7b26f','#3fa7d6'], series: {
                                                                   data:data1,
@@ -270,6 +306,32 @@ export const main_page = {
           name:'医药制造类企业',
           value:6,
         },
+      ],
+      data2:[
+        {
+          name:'电气机械制造',
+          value:29,
+        },
+        {
+          name:'计算机制造',
+          value:26,
+        },
+        {
+          name:'纺织',
+          value:20,
+        },
+        {
+          name:'通用设备制造',
+          value:12,
+        },
+        {
+          name:'家具制造',
+          value:7,
+        },
+        {
+          name:'医药制造',
+          value:6,
+        },
       ]
     }
   },
@@ -302,7 +364,30 @@ export const main_page = {
         seriesIndex:params.seriesIndex,
         name:params.name
       })
-    }
+    },
+    f4(params){
+      const {marker,name,percent} = params
+      return `${marker}${name}:${percent}%`
+    },
+    f5(params){
+      return params.percent+'%\n'+params.name
+    },
+    fn3(params){
+      const echartsInstance=this.$refs.chart2
+      echartsInstance.dispatchAction({
+        type:'select',
+        seriesIndex:params.seriesIndex,
+        name:params.name
+      })
+    },
+    fn4(params){
+      const echartsInstance=this.$refs.chart2
+      echartsInstance.dispatchAction({
+        type:'unselect',
+        seriesIndex:params.seriesIndex,
+        name:params.name
+      })
+    },
   }
 }
 export default main_page

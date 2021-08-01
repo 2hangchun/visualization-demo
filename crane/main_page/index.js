@@ -575,9 +575,61 @@ module.exports = {
                                                 $style: {
                                                     width: '389px',
                                                     height: '308px',
-                                                    $border: `'1px solid red'`,
                                                 }
-                                            }
+                                            },
+                                            children: [
+                                                {
+                                                    component: 'v-chart',
+                                                    props:{
+                                                        ref:'chart2',
+                                                        $option:{
+                                                            $tooltip:`{
+                                                        show:true,
+                                                        backgroundColor:'rgba(50,50,50,0.7)',
+                                                        textStyle:{
+                                                        color:'#fff',
+                                                        },
+                                                        formatter:f4
+                                                    }`,
+                                                            $color:`['#007afe','#dece84','#8f919f','#2dc4b6','#f7b26f','#3fa7d6']`,
+                                                            $series:`{
+                                                                data:data2,
+                                                                type:'pie',
+                                                                label:{
+                                                                    show:true,
+                                                                    align:'left',
+                                                                    textStyle:{
+                                                                        color:'#fff',
+                                                                        fontSize:'12px',
+                                                                    },
+                                                                    formatter:f5
+                                                                },
+                                                                labelLine:{
+                                                                    lineStyle:{
+                                                                        color:'#0650a7',
+                                                                        width:1
+                                                                    }
+                                                                },
+                                                                emphasis:{
+                                                                    scale:false
+                                                                },
+                                                                selectedMode:'single',
+                                                                radius:[0,'50%']
+                                                            }`
+                                                        }
+                                                    },
+                                                    events: {
+                                                        mouseover:{
+                                                            params:['$event'],
+                                                            actions:['fn3($event)']
+                                                        },
+                                                        mouseout:{
+                                                            params:['$event'],
+                                                            actions:['fn4($event)']
+                                                        }
+                                                    }
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -1160,6 +1212,10 @@ module.exports = {
                                                     }`,
                                                     $tooltip:`{
                                                         show:true,
+                                                        backgroundColor:'rgba(50,50,50,0.7)',
+                                                        textStyle:{
+                                                        color:'#fff',
+                                                        },
                                                         formatter:f2
                                                     }`,
                                                     $color:`['#007afe','#dece84','#8f919f','#2dc4b6','#f7b26f','#3fa7d6']`,
