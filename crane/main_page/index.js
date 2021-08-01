@@ -109,7 +109,6 @@ module.exports = {
                                             width: '713px',
                                             height: '247px',
                                             margin: '50px 0 0 23px',
-                                            $border: `'1px solid yellow'`,
                                             display: 'flex',
                                             justifyContent: 'space-between'
                                         }
@@ -122,7 +121,6 @@ module.exports = {
                                                 $style: {
                                                     width: '282px',
                                                     height: '207px',
-                                                    $border: `'1px solid red'`,
                                                     display: 'flex',
                                                     flexDirection: 'column',
                                                     justifyContent: 'space-between'
@@ -136,7 +134,6 @@ module.exports = {
                                                         $style: {
                                                             width: '282px',
                                                             height: '70px',
-                                                            $border: `'1px solid green'`,
                                                             display: 'flex',
                                                             justifyContent: 'space-between'
                                                         }
@@ -173,15 +170,69 @@ module.exports = {
                                                         },
                                                         {
                                                             component: 'div',
-                                                            content: '图标',
                                                             props: {
                                                                 class: 'container__bottom__left-top__bottom__left__first__right',
                                                                 $style: {
                                                                     width: '200px',
                                                                     height: '70px',
-                                                                    $border: `'1px solid green'`,
                                                                 }
                                                             },
+                                                            children: [
+                                                                {
+                                                                    component:'div',
+                                                                    children: [
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                              $style:{
+                                                                                  display: 'inline-block',
+                                                                                  color:'#fff',
+                                                                                  fontSize:'22px',
+                                                                                  fontWeight:500
+                                                                              }
+                                                                            },
+                                                                            content:'￥'
+                                                                        },
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                              $style:{
+                                                                                  display: 'inline-block',
+                                                                                  color:'#dece84',
+                                                                                  fontSize:'40px',
+                                                                                  fontWeight:400,
+                                                                                  letterSpacing:1
+                                                                              }
+                                                                            },
+                                                                            content:'360.00'
+                                                                        },
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                              $style:{
+                                                                                  display: 'inline-block',
+                                                                                  color:'#8f919f',
+                                                                                  fontSize:'14px',
+                                                                                  fontWeight:500
+                                                                              }
+                                                                            },
+                                                                            content:'亿元'
+                                                                        },
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    component:'div',
+                                                                    content: '园区总产值',
+                                                                    props:{
+                                                                        $style:{
+                                                                            color:'#fff',
+                                                                            fontsize:'14px',
+                                                                            fontWeight:500,
+                                                                            marginTop:'-9px'
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
                                                         }
                                                     ]
 
@@ -193,7 +244,6 @@ module.exports = {
                                                         $style: {
                                                             width: '282px',
                                                             height: '70px',
-                                                            $border: `'1px solid green'`,
                                                             display: 'flex',
                                                             justifyContent: 'space-between'
                                                         }
@@ -230,15 +280,69 @@ module.exports = {
                                                         },
                                                         {
                                                             component: 'div',
-                                                            content: '图标',
                                                             props: {
                                                                 class: 'container__bottom__left-top__bottom__left__second__right',
                                                                 $style: {
                                                                     width: '200px',
                                                                     height: '70px',
-                                                                    $border: `'1px solid green'`,
                                                                 }
                                                             },
+                                                            children: [
+                                                                {
+                                                                    component:'div',
+                                                                    children: [
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#fff',
+                                                                                    fontSize:'22px',
+                                                                                    fontWeight:500
+                                                                                }
+                                                                            },
+                                                                            content:'￥'
+                                                                        },
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#dece84',
+                                                                                    fontSize:'40px',
+                                                                                    fontWeight:400,
+                                                                                    letterSpacing:1
+                                                                                }
+                                                                            },
+                                                                            content:'73.30'
+                                                                        },
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#8f919f',
+                                                                                    fontSize:'14px',
+                                                                                    fontWeight:500
+                                                                                }
+                                                                            },
+                                                                            content:'亿元'
+                                                                        },
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    component:'div',
+                                                                    content: '园区总投资',
+                                                                    props:{
+                                                                        $style:{
+                                                                            color:'#fff',
+                                                                            fontsize:'14px',
+                                                                            fontWeight:500,
+                                                                            marginTop:'-9px'
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
                                                         }
                                                     ]
 
@@ -318,7 +422,6 @@ module.exports = {
                                                 $style: {
                                                     width: '240px',
                                                     height: '308px',
-                                                    $border: `'1px solid red'`,
                                                     display: 'flex',
                                                     flexDirection: 'column',
                                                 }
@@ -331,7 +434,6 @@ module.exports = {
                                                         $style: {
                                                             height: '75px',
                                                             width: '222px',
-                                                            $border: `'1px solid green'`,
                                                             marginTop: '25px',
                                                             display: 'flex',
                                                             justifyContent: 'space-between',
@@ -374,9 +476,52 @@ module.exports = {
                                                                 $style: {
                                                                     width: '140px',
                                                                     height: '75px',
-                                                                    $border: `'1px solid red'`
                                                                 }
-                                                            }
+                                                            },
+                                                            children: [
+                                                                {
+                                                                    component:'div',
+                                                                    children: [
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#dece84',
+                                                                                    fontSize:'40px',
+                                                                                    fontWeight:400,
+                                                                                    letterSpacing:1
+                                                                                }
+                                                                            },
+                                                                            content:'1,948'
+                                                                        },
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#8f919f',
+                                                                                    fontSize:'14px',
+                                                                                    fontWeight:500
+                                                                                }
+                                                                            },
+                                                                            content:'个'
+                                                                        },
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    component:'div',
+                                                                    content: '技术成果',
+                                                                    props:{
+                                                                        $style:{
+                                                                            color:'#fff',
+                                                                            fontsize:'14px',
+                                                                            fontWeight:500,
+                                                                            marginTop:'-4px'
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
@@ -387,7 +532,6 @@ module.exports = {
                                                         $style: {
                                                             height: '46px',
                                                             width: '192px',
-                                                            $border: `'1px solid green'`,
                                                             marginTop: '29px',
                                                             marginLeft: '15px',
                                                             display: 'flex',
@@ -432,9 +576,52 @@ module.exports = {
                                                                 $style: {
                                                                     width: '140px',
                                                                     height: '46px',
-                                                                    $border: `'1px solid red'`
                                                                 }
-                                                            }
+                                                            },
+                                                            children: [
+                                                                {
+                                                                    component:'div',
+                                                                    children: [
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#dece84',
+                                                                                    fontSize:'20px',
+                                                                                    fontWeight:400,
+                                                                                    letterSpacing:1
+                                                                                }
+                                                                            },
+                                                                            content:'670'
+                                                                        },
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#8f919f',
+                                                                                    fontSize:'14px',
+                                                                                    fontWeight:500
+                                                                                }
+                                                                            },
+                                                                            content:'个'
+                                                                        },
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    component:'div',
+                                                                    content: '基础理论成果',
+                                                                    props:{
+                                                                        $style:{
+                                                                            color:'#fff',
+                                                                            fontsize:'12px',
+                                                                            fontWeight:500,
+                                                                            marginTop:'-4px'
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
@@ -445,7 +632,6 @@ module.exports = {
                                                         $style: {
                                                             height: '46px',
                                                             width: '192px',
-                                                            $border: `'1px solid green'`,
                                                             marginTop: '16px',
                                                             marginLeft: '15px',
                                                             display: 'flex',
@@ -490,9 +676,52 @@ module.exports = {
                                                                 $style: {
                                                                     width: '140px',
                                                                     height: '46px',
-                                                                    $border: `'1px solid red'`
                                                                 }
-                                                            }
+                                                            },
+                                                            children: [
+                                                                {
+                                                                    component:'div',
+                                                                    children: [
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#dece84',
+                                                                                    fontSize:'20px',
+                                                                                    fontWeight:400,
+                                                                                    letterSpacing:1
+                                                                                }
+                                                                            },
+                                                                            content:'800'
+                                                                        },
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#8f919f',
+                                                                                    fontSize:'14px',
+                                                                                    fontWeight:500
+                                                                                }
+                                                                            },
+                                                                            content:'个'
+                                                                        },
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    component:'div',
+                                                                    content: '应用技术成果',
+                                                                    props:{
+                                                                        $style:{
+                                                                            color:'#fff',
+                                                                            fontsize:'12px',
+                                                                            fontWeight:500,
+                                                                            marginTop:'-4px'
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
@@ -503,7 +732,6 @@ module.exports = {
                                                         $style: {
                                                             height: '46px',
                                                             width: '192px',
-                                                            $border: `'1px solid green'`,
                                                             marginTop: '16px',
                                                             marginLeft: '15px',
                                                             display: 'flex',
@@ -548,9 +776,52 @@ module.exports = {
                                                                 $style: {
                                                                     width: '140px',
                                                                     height: '46px',
-                                                                    $border: `'1px solid red'`
                                                                 }
-                                                            }
+                                                            },
+                                                            children: [
+                                                                {
+                                                                    component:'div',
+                                                                    children: [
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#dece84',
+                                                                                    fontSize:'20px',
+                                                                                    fontWeight:400,
+                                                                                    letterSpacing:1
+                                                                                }
+                                                                            },
+                                                                            content:'478'
+                                                                        },
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#8f919f',
+                                                                                    fontSize:'14px',
+                                                                                    fontWeight:500
+                                                                                }
+                                                                            },
+                                                                            content:'个'
+                                                                        },
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    component:'div',
+                                                                    content: '软科学成果',
+                                                                    props:{
+                                                                        $style:{
+                                                                            color:'#fff',
+                                                                            fontsize:'12px',
+                                                                            fontWeight:500,
+                                                                            marginTop:'-4px'
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 },
