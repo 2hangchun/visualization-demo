@@ -41,7 +41,7 @@
               科技成果
             </div>
           </div>
-          <div class="container__bottom__right-top__bottom" :style="{width: '991px', height: '308px', border: '1px solid yellow', margin: '21px 0 0 23px', display: 'flex'}">
+          <div class="container__bottom__right-top__bottom" :style="{width: '991px', height: '308px', margin: '21px 0 0 23px', display: 'flex'}">
             <div class="container__bottom__right-top__bottom__first" :style="{width: '240px', height: '308px', border: '1px solid red', display: 'flex', flexDirection: 'column'}">
               <div class="container__bottom__right-top__bottom__first__first" :style="{height: '75px', width: '222px', border: '1px solid green', marginTop: '25px', display: 'flex', justifyContent: 'space-between'}">
                 <div class="container__bottom__right-top__bottom__first__first__left" :style="{width: '66px', height: '66px', marginTop: '3px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#19284b'}">
@@ -227,7 +227,7 @@
               项目申报
             </div>
           </div>
-          <div class="container__bottom__left-bottom__bottom" :style="{width: '958px', height: '274px', border: '1px solid yellow', margin: '52px 0 0 30px', display: 'flex'}">
+          <div class="container__bottom__left-bottom__bottom" :style="{width: '958px', height: '274px', margin: '52px 0 0 30px', display: 'flex'}">
             <div class="container__bottom__left-bottom__bottom__left" :style="{width: '261px', height: '218px', marginTop: '5px', border: '1px solid red'}">
               <div class="container__bottom__left-bottom__bottom__left__top" :style="{width: '221px', height: '75px', border: '1px solid white', display: 'flex', justifyContent: 'space-between'}">
                 <div :style="{width: '66px', height: '66px', marginTop: '4px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#19284b'}">
@@ -321,7 +321,108 @@
                 年度申报成功率
               </div>
             </div>
-            <div class="container__bottom__left-bottom__bottom__right" :style="{width: '372px', height: '274px', marginLeft: '55px', border: '1px solid red'}" />
+            <div class="container__bottom__left-bottom__bottom__right" :style="{width: '372px', height: '274px', marginLeft: '55px'}">
+              <v-chart :option="{legend: {
+                                                                            show: true,
+                                                                            type: 'plain',
+                                                                            bottom: 0,
+                                                                            icon:'circle',
+                                                                            textStyle:{
+                                                                                color:'#fff',
+                                                                                fontSize:'14px'
+                                                                            }
+                                                                        }, grid: {
+                                                                            width:'250px',
+                                                                            height:'210px',
+                                                                            top:3,
+                                                                            right:20
+                                                                        }, tooltip: {
+                                                                            show: true,
+                                                                        }, yAxis: {
+                                                                            type: 'category',
+                                                                            data: ['医药制造','家具制造','通用设备制造','纺织','计算机制造','电气机械制造'],
+                                                                            axisLabel: {
+                                                                                show: true,
+                                                                                color: '#5992d1',
+                                                                                fontSize: '15px',
+                                                                                interval: 0
+                                                                            },
+                                                                            axisLine: {
+                                                                                show:false
+                                                                            },
+                                                                            axisTick: {
+                                                                                show: false,
+                                                                            },
+                                                                        }, xAxis: {
+                                                                            type: 'value',
+                                                                            show: true,
+                                                                            axisLine: {
+                                                                                show: false,
+                                                                            },
+                                                                            axisLabel: {
+                                                                                color: '#5992d1',
+                                                                                fontSize: '15px',
+                                                                            },
+                                                                            axisTick: {
+                                                                                show: false
+                                                                            },
+                                                                            splitLine: {
+                                                                                show: false
+                                                                            }
+                                                                        }, series: [
+                                                                            {
+                                                                                type: 'bar',
+                                                                                name: '2017',
+                                                                                data: [65,76,52,95,50,80],
+                                                                                barWidth: '10px',
+                                                                                itemStyle: {
+                                                                                    color: {
+                                                                                        type: 'linear',
+                                                                                        x: 0,
+                                                                                        y: 0,
+                                                                                        x2: 1,
+                                                                                        y2: 0,
+                                                                                        colorStops: [
+                                                                                            {
+                                                                                                offset: 0,
+                                                                                                color: '#1257ab'
+                                                                                            },
+                                                                                            {
+                                                                                                offset: 1,
+                                                                                                color: '#157df9',
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            {
+                                                                                type: 'bar',
+                                                                                name: '2018',
+                                                                                data: [83,70,90,86,94,97],
+                                                                                barGap: 0,
+                                                                                barWidth: '10px',
+                                                                                itemStyle: {
+                                                                                    color: {
+                                                                                        type: 'linear',
+                                                                                        x: 0,
+                                                                                        y: 0,
+                                                                                        x2: 1,
+                                                                                        y2: 0,
+                                                                                        colorStops: [
+                                                                                            {
+                                                                                                offset: 0,
+                                                                                                color: '#908867'
+                                                                                            },
+                                                                                            {
+                                                                                                offset: 1,
+                                                                                                color: '#dbcb87',
+                                                                                            }
+                                                                                        ]
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        ]}" />
+            </div>
           </div>
         </div>
         <div class="container__bottom__right-bottom" :style="{width: '764px', height: '414px', marginLeft: '34px', display: 'flex', flexDirection: 'column'}">

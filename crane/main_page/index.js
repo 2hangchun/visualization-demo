@@ -306,7 +306,6 @@ module.exports = {
                                         $style: {
                                             width: '991px',
                                             height: '308px',
-                                            $border: `'1px solid yellow'`,
                                             $margin: `'21px 0 0 23px'`,
                                             display: 'flex',
                                         }
@@ -809,7 +808,6 @@ module.exports = {
                                         $style: {
                                             width: '958px',
                                             height: '274px',
-                                            $border: `'1px solid yellow'`,
                                             $margin: `'52px 0 0 30px'`,
                                             display: 'flex',
                                         }
@@ -1249,9 +1247,122 @@ module.exports = {
                                                     width: '372px',
                                                     height: '274px',
                                                     marginLeft: '55px',
-                                                    $border: `'1px solid red'`,
                                                 }
-                                            }
+                                            },
+                                            children: [
+                                                {
+                                                    component: 'v-chart',
+                                                    props:{
+                                                        $option:{
+                                                            $legend: `{
+                                                                show: true,
+                                                                type: 'plain',
+                                                                bottom: 0,
+                                                                icon:'circle',
+                                                                textStyle:{
+                                                                    color:'#fff',
+                                                                    fontSize:'14px'
+                                                                }
+                                                            }`,
+                                                            $grid:`{
+                                                                width:'250px',
+                                                                height:'210px',
+                                                                top:3,
+                                                                right:20
+                                                            }`,
+                                                            $tooltip: `{
+                                                                show: true,
+                                                            }`,
+                                                            $yAxis: `{
+                                                                type: 'category',
+                                                                data: ['医药制造','家具制造','通用设备制造','纺织','计算机制造','电气机械制造'],
+                                                                axisLabel: {
+                                                                    show: true,
+                                                                    color: '#5992d1',
+                                                                    fontSize: '15px',
+                                                                    interval: 0
+                                                                },
+                                                                axisLine: {
+                                                                    show:false
+                                                                },
+                                                                axisTick: {
+                                                                    show: false,
+                                                                },
+                                                            }`,
+                                                            $xAxis: `{
+                                                                type: 'value',
+                                                                show: true,
+                                                                axisLine: {
+                                                                    show: false,
+                                                                },
+                                                                axisLabel: {
+                                                                    color: '#5992d1',
+                                                                    fontSize: '15px',
+                                                                },
+                                                                axisTick: {
+                                                                    show: false
+                                                                },
+                                                                splitLine: {
+                                                                    show: false
+                                                                }
+                                                            }`,
+                                                            $series: `[
+                                                                {
+                                                                    type: 'bar',
+                                                                    name: '2017',
+                                                                    data: [65,76,52,95,50,80],
+                                                                    barWidth: '10px',
+                                                                    itemStyle: {
+                                                                        color: {
+                                                                            type: 'linear',
+                                                                            x: 0,
+                                                                            y: 0,
+                                                                            x2: 1,
+                                                                            y2: 0,
+                                                                            colorStops: [
+                                                                                {
+                                                                                    offset: 0,
+                                                                                    color: '#1257ab'
+                                                                                },
+                                                                                {
+                                                                                    offset: 1,
+                                                                                    color: '#157df9',
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    type: 'bar',
+                                                                    name: '2018',
+                                                                    data: [83,70,90,86,94,97],
+                                                                    barGap: 0,
+                                                                    barWidth: '10px',
+                                                                    itemStyle: {
+                                                                        color: {
+                                                                            type: 'linear',
+                                                                            x: 0,
+                                                                            y: 0,
+                                                                            x2: 1,
+                                                                            y2: 0,
+                                                                            colorStops: [
+                                                                                {
+                                                                                    offset: 0,
+                                                                                    color: '#908867'
+                                                                                },
+                                                                                {
+                                                                                    offset: 1,
+                                                                                    color: '#dbcb87',
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]`
+                                                        }
+                                                    }
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
