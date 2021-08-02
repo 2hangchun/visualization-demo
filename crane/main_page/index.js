@@ -356,9 +356,139 @@ module.exports = {
                                                 $style: {
                                                     width: '398px',
                                                     height: '247px',
-                                                    $border: `'1px solid red'`,
+                                                },
+                                            },
+                                            children: [
+                                                {
+                                                    component:'v-chart',
+                                                    props:{
+                                                        $option:{
+                                                            $grid:`{
+                                                                    width:'350px',
+                                                                    height:'200px',
+                                                                    top:17,
+                                                                    left:30
+                                                                }`,
+                                                            $tooltip: `{
+                                                                    show: true,
+                                                                    trigger:'axis',
+                                                                    borderWidth:0,
+                                                                    backgroundColor:'rgba(60,71,89,0.9)',
+                                                        textStyle:{
+                                                        color:'#fff',
+                                                        fontSize:'14px',
+                                                        fontWeight:400
+                                                        },
+                                                                    axisPointer: {
+                                                                        type: 'shadow'
+                                                                    },
+                                                                    formatter:f6
+                                                                }`,
+
+                                                            $xAxis: `{
+                                                                    type: 'category',
+                                                                    data: ['17-18年总产值同比','17-18年总投资同比'],
+                                                                    axisLabel: {
+                                                                        show: true,
+                                                                        color: '#5992d1',
+                                                                        fontSize: '16px',
+                                                                        interval:0
+                                                                    },
+                                                                    axisLine: {
+                                                                        show:true,
+                                                                        lineStyle:{
+                                                                            color:'#0650a7',
+                                                                        }
+                                                                    },
+                                                                    axisTick: {
+                                                                        show: true,
+                                                                    },
+                                                                }`,
+                                                            $yAxis: `{
+                                                                    type: 'value',
+                                                                    show: true,
+                                                                    axisLine: {
+                                                                        show: true,
+                                                                        lineStyle:{
+                                                                            color:'#0650a7'
+                                                                        }
+                                                                    },
+                                                                    axisLabel: {
+                                                                        color: '#5992d1',
+                                                                        fontSize: '16px',
+                                                                    },
+                                                                    axisTick: {
+                                                                        show: true
+                                                                    },
+                                                                    splitLine: {
+                                                                        show: false
+                                                                    }
+                                                                }`,
+                                                            $aria:`{
+                                                                    enabled: true,
+                                                                    decal:{
+                                                                        show:true
+                                                                    }
+                                                                }`,
+                                                            $series: `[
+                                                                    {
+                                                                        type: 'pictorialBar',
+                                                                        symbolBoundingData:[10,10],
+                                                                        data:[10,10],
+                                                                        barWidth: '50px',
+                                                                        itemStyle: {
+                                                                            color:'#0d2d5d'
+                                                                        },
+                                                                        symbolRepeat: 'fixed',
+                                                                        symbolMargin: 3,
+                                                                        symbol: 'roundRect',
+                                                                        radius:'10px',
+                                                                        symbolSize: [50, 5],
+                                                                        symbolPosition: 'start',
+                                                                        silent:true
+                                                                    },
+                                                                    {
+                                                                        type: 'pictorialBar',
+                                                                        data: [8,6.5],
+                                                                        barWidth: '50px',
+                                                                        itemStyle: {
+                                                                            color: {
+                                                                                type: 'linear',
+                                                                                x: 0,
+                                                                                y: 0,
+                                                                                x2: 1,
+                                                                                y2: 0,
+                                                                                colorStops: [
+                                                                                    {
+                                                                                        offset: 0,
+                                                                                        color: '#1257ab'
+                                                                                    },
+                                                                                    {
+                                                                                        offset: 1,
+                                                                                        color: '#157df9',
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        label: {
+                                                                            show:true,
+                                                                            position:'top',
+                                                                            color:'#fff',
+                                                                            fontSize:'16px'
+                                                                        },
+                                                                        symbolRepeat: true,
+                                                                        symbolMargin: 3,
+                                                                        symbol: 'roundRect',
+                                                                        radius:'10px',
+                                                                        symbolSize: [50, 5],
+                                                                        symbolPosition: 'start',
+                                                                    },
+
+                                                                ]`
+                                                        }
+                                                    }
                                                 }
-                                            }
+                                            ]
                                         }
                                     ]
                                 }
@@ -857,6 +987,13 @@ module.exports = {
                                                             }`,
                                                             $tooltip: `{
                                                                 show: true,
+                                                                borderWidth:0,
+                                                                backgroundColor:'rgba(60,71,89,0.9)',
+                                                        textStyle:{
+                                                        color:'#fff',
+                                                        fontSize:'14px',
+                                                        fontWeight:400
+                                                        },
                                                             }`,
                                                             $grid:`{
                                                                 width: '310px',
@@ -988,9 +1125,12 @@ module.exports = {
                                                         $option:{
                                                             $tooltip:`{
                                                         show:true,
-                                                        backgroundColor:'rgba(50,50,50,0.7)',
+                                                        borderWidth:0,
+                                                        backgroundColor:'rgba(60,71,89,0.9)',
                                                         textStyle:{
                                                         color:'#fff',
+                                                        fontSize:'14px',
+                                                        fontWeight:400
                                                         },
                                                         formatter:f4
                                                     }`,
@@ -1645,10 +1785,17 @@ module.exports = {
                                                             component: 'v-chart',
                                                             props: {
                                                                 $option: {
-                                                                    $tooltip: {
+                                                                    $tooltip: `{
                                                                         show: true,
+                                                                        borderWidth:0,
+                                                                        backgroundColor:'rgba(60,71,89,0.9)',
+                                                        textStyle:{
+                                                        color:'#fff',
+                                                        fontSize:'14px',
+                                                        fontWeight:400
+                                                        },
                                                                         trigger: 'item',
-                                                                    },
+                                                                    }`,
                                                                     $series: `[
                                                                         {
                                                                             type: 'pie',
@@ -1670,10 +1817,13 @@ module.exports = {
                                                                                         color: '#fff'
                                                                                     },
                                                                                     tooltip: {
-                                                                                        backgroundColor: 'rgba(50,50,50,.9)',
-                                                                                        textStyle: {
-                                                                                            color: '#fff'
-                                                                                        },
+                                                                                    borderWidth:0,
+                                                                                        backgroundColor:'rgba(60,71,89,0.9)',
+                                                        textStyle:{
+                                                        color:'#fff',
+                                                        fontSize:'14px',
+                                                        fontWeight:400
+                                                        },
                                                                                         formatter:f1,
                                                                                         position:p1
                                                                                     },
@@ -1692,7 +1842,7 @@ module.exports = {
                                                                                         opacity: 0.1
                                                                                     },
                                                                                     tooltip: {
-                                                                                        show: false
+                                                                                        show: false,
                                                                                     }
                                                                                 },
 
@@ -1754,6 +1904,13 @@ module.exports = {
                                                             }`,
                                                             $tooltip: `{
                                                                 show: true,
+                                                                borderWidth:0,
+                                                                backgroundColor:'rgba(60,71,89,0.9)',
+                                                        textStyle:{
+                                                        color:'#fff',
+                                                        fontSize:'14px',
+                                                        fontWeight:400
+                                                        },
                                                             }`,
                                                             $yAxis: `{
                                                                 type: 'category',
@@ -1934,9 +2091,12 @@ module.exports = {
                                                     }`,
                                                     $tooltip:`{
                                                         show:true,
-                                                        backgroundColor:'rgba(50,50,50,0.7)',
+                                                        borderWidth:0,
+                                                        backgroundColor:'rgba(60,71,89,0.9)',
                                                         textStyle:{
                                                         color:'#fff',
+                                                        fontSize:'14px',
+                                                        fontWeight:400
                                                         },
                                                         formatter:f2
                                                     }`,
