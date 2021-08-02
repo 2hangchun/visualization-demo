@@ -988,12 +988,17 @@ module.exports = {
                                                             $tooltip: `{
                                                                 show: true,
                                                                 borderWidth:0,
+                                                                trigger:'axis',
+            axisPointer: {
+                type: 'shadow'
+            },
                                                                 backgroundColor:'rgba(60,71,89,0.9)',
                                                         textStyle:{
                                                         color:'#fff',
                                                         fontSize:'14px',
                                                         fontWeight:400
                                                         },
+                                                        formatter:f7
                                                             }`,
                                                             $grid:`{
                                                                 width: '310px',
@@ -1904,6 +1909,11 @@ module.exports = {
                                                             }`,
                                                             $tooltip: `{
                                                                 show: true,
+                                                                 trigger:'axis',
+            axisPointer: {
+                type: 'shadow'
+            },
+            formatter:f7,
                                                                 borderWidth:0,
                                                                 backgroundColor:'rgba(60,71,89,0.9)',
                                                         textStyle:{

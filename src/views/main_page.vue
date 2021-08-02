@@ -272,12 +272,17 @@
                                                                         }, tooltip: {
                                                                             show: true,
                                                                             borderWidth:0,
+                                                                            trigger:'axis',
+                        axisPointer: {
+                            type: 'shadow'
+                        },
                                                                             backgroundColor:'rgba(60,71,89,0.9)',
                                                                     textStyle:{
                                                                     color:'#fff',
                                                                     fontSize:'14px',
                                                                     fontWeight:400
                                                                     },
+                                                                    formatter:f7
                                                                         }, grid: {
                                                                             width: '310px',
                                                                             height: '175px',
@@ -612,6 +617,11 @@
                                                                             right:20
                                                                         }, tooltip: {
                                                                             show: true,
+                                                                             trigger:'axis',
+                        axisPointer: {
+                            type: 'shadow'
+                        },
+                        formatter:f7,
                                                                             borderWidth:0,
                                                                             backgroundColor:'rgba(60,71,89,0.9)',
                                                                     textStyle:{
@@ -893,6 +903,13 @@ export const main_page = {
     f6(params){
       const {axisValue,data,marker}=params[1]
       return `${marker} ${axisValue}:${data}`
+    },
+    f7(params){
+      const [{marker:m1,data:d1,axisValue,seriesName:s1},{marker:m2,data:d2,seriesName:s2}]=params
+      return `${axisValue}${'<br\>'}
+                    ${m1}${s1}:${d1}${'<br\>'}
+                    ${m2}${s2}:${d2}
+                    `
     }
   }
 }
