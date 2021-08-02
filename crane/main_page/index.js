@@ -226,7 +226,7 @@ module.exports = {
                                                                     props:{
                                                                         $style:{
                                                                             color:'#fff',
-                                                                            fontsize:'14px',
+                                                                            fontSize:'14px',
                                                                             fontWeight:500,
                                                                             marginTop:'-9px'
                                                                         }
@@ -336,7 +336,7 @@ module.exports = {
                                                                     props:{
                                                                         $style:{
                                                                             color:'#fff',
-                                                                            fontsize:'14px',
+                                                                            fontSize:'14px',
                                                                             fontWeight:500,
                                                                             marginTop:'-9px'
                                                                         }
@@ -502,7 +502,8 @@ module.exports = {
                                                                                     display: 'inline-block',
                                                                                     color:'#8f919f',
                                                                                     fontSize:'14px',
-                                                                                    fontWeight:500
+                                                                                    fontWeight:500,
+                                                                                    paddingLeft: '8px'
                                                                                 }
                                                                             },
                                                                             content:'个'
@@ -515,7 +516,7 @@ module.exports = {
                                                                     props:{
                                                                         $style:{
                                                                             color:'#fff',
-                                                                            fontsize:'14px',
+                                                                            fontSize:'14px',
                                                                             fontWeight:500,
                                                                             marginTop:'-4px'
                                                                         }
@@ -602,7 +603,8 @@ module.exports = {
                                                                                     display: 'inline-block',
                                                                                     color:'#8f919f',
                                                                                     fontSize:'14px',
-                                                                                    fontWeight:500
+                                                                                    fontWeight:500,
+                                                                                    paddingLeft: '8px'
                                                                                 }
                                                                             },
                                                                             content:'个'
@@ -615,7 +617,7 @@ module.exports = {
                                                                     props:{
                                                                         $style:{
                                                                             color:'#fff',
-                                                                            fontsize:'12px',
+                                                                            fontSize:'12px',
                                                                             fontWeight:500,
                                                                             marginTop:'-4px'
                                                                         }
@@ -702,7 +704,8 @@ module.exports = {
                                                                                     display: 'inline-block',
                                                                                     color:'#8f919f',
                                                                                     fontSize:'14px',
-                                                                                    fontWeight:500
+                                                                                    fontWeight:500,
+                                                                                    paddingLeft: '8px'
                                                                                 }
                                                                             },
                                                                             content:'个'
@@ -715,7 +718,7 @@ module.exports = {
                                                                     props:{
                                                                         $style:{
                                                                             color:'#fff',
-                                                                            fontsize:'12px',
+                                                                            fontSize:'12px',
                                                                             fontWeight:500,
                                                                             marginTop:'-4px'
                                                                         }
@@ -802,7 +805,8 @@ module.exports = {
                                                                                     display: 'inline-block',
                                                                                     color:'#8f919f',
                                                                                     fontSize:'14px',
-                                                                                    fontWeight:500
+                                                                                    fontWeight:500,
+                                                                                    paddingLeft: '8px'
                                                                                 }
                                                                             },
                                                                             content:'个'
@@ -815,7 +819,7 @@ module.exports = {
                                                                     props:{
                                                                         $style:{
                                                                             color:'#fff',
-                                                                            fontsize:'12px',
+                                                                            fontSize:'12px',
                                                                             fontWeight:500,
                                                                             marginTop:'-4px'
                                                                         }
@@ -1092,7 +1096,6 @@ module.exports = {
                                                     width: '261px',
                                                     height: '218px',
                                                     marginTop: '5px',
-                                                    $border: `'1px solid red'`,
                                                 }
                                             },
                                             children: [
@@ -1103,7 +1106,6 @@ module.exports = {
                                                         $style: {
                                                             width: '221px',
                                                             height: '75px',
-                                                            $border: `'1px solid white'`,
                                                             display: 'flex',
                                                             justifyContent: 'space-between',
                                                         }
@@ -1143,9 +1145,52 @@ module.exports = {
                                                                 $style: {
                                                                     width: '140px',
                                                                     height: '75px',
-                                                                    $border: `'1px solid green'`,
                                                                 }
-                                                            }
+                                                            },
+                                                            children: [
+                                                                {
+                                                                    component:'div',
+                                                                    children: [
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#dece84',
+                                                                                    fontSize:'40px',
+                                                                                    fontWeight:400,
+                                                                                    letterSpacing:1
+                                                                                }
+                                                                            },
+                                                                            content:'423'
+                                                                        },
+                                                                        {
+                                                                            component: 'span',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    display: 'inline-block',
+                                                                                    color:'#8f919f',
+                                                                                    fontSize:'14px',
+                                                                                    fontWeight:500,
+                                                                                    paddingLeft: '8px'
+                                                                                }
+                                                                            },
+                                                                            content:'个'
+                                                                        },
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    component:'div',
+                                                                    content: '申报数量',
+                                                                    props:{
+                                                                        $style:{
+                                                                            color:'#fff',
+                                                                            fontSize:'14px',
+                                                                            fontWeight:500,
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
                                                         },
                                                     ]
                                                 },
@@ -1156,7 +1201,6 @@ module.exports = {
                                                         $style: {
                                                             width: '261px',
                                                             height: '46px',
-                                                            $border: `'1px solid white'`,
                                                             marginTop: '34px',
                                                             display: 'flex',
                                                             justifyContent: 'space-between'
@@ -1172,7 +1216,6 @@ module.exports = {
                                                                     height: '46px',
                                                                     display: 'flex',
                                                                     justifyContent: 'space-between',
-                                                                    $border: `'1px solid yellow'`,
                                                                 }
                                                             },
                                                             children: [
@@ -1213,9 +1256,52 @@ module.exports = {
                                                                         $style: {
                                                                             width: '100px',
                                                                             height: '46px',
-                                                                            $border: `'1px solid red'`,
                                                                         }
-                                                                    }
+                                                                    },
+                                                                    children: [
+                                                                        {
+                                                                            component:'div',
+                                                                            children: [
+                                                                                {
+                                                                                    component: 'span',
+                                                                                    props:{
+                                                                                        $style:{
+                                                                                            display: 'inline-block',
+                                                                                            color:'#dece84',
+                                                                                            fontSize:'20px',
+                                                                                            fontWeight:400,
+                                                                                            letterSpacing:1
+                                                                                        }
+                                                                                    },
+                                                                                    content:'170'
+                                                                                },
+                                                                                {
+                                                                                    component: 'span',
+                                                                                    props:{
+                                                                                        $style:{
+                                                                                            display: 'inline-block',
+                                                                                            color:'#8f919f',
+                                                                                            fontSize:'14px',
+                                                                                            fontWeight:500,
+                                                                                            paddingLeft: '8px'
+                                                                                        }
+                                                                                    },
+                                                                                    content:'个'
+                                                                                },
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            component:'div',
+                                                                            content: '国家发改委项目',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    color:'#fff',
+                                                                                    fontSize:'12px',
+                                                                                    fontWeight:500,
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    ]
                                                                 }
                                                             ]
                                                         },
@@ -1228,7 +1314,6 @@ module.exports = {
                                                                     height: '46px',
                                                                     display: 'flex',
                                                                     justifyContent: 'space-between',
-                                                                    $border: `'1px solid yellow'`,
                                                                 }
                                                             },
                                                             children: [
@@ -1269,9 +1354,52 @@ module.exports = {
                                                                         $style: {
                                                                             width: '70px',
                                                                             height: '46px',
-                                                                            $border: `'1px solid red'`,
                                                                         }
-                                                                    }
+                                                                    },
+                                                                    children: [
+                                                                        {
+                                                                            component:'div',
+                                                                            children: [
+                                                                                {
+                                                                                    component: 'span',
+                                                                                    props:{
+                                                                                        $style:{
+                                                                                            display: 'inline-block',
+                                                                                            color:'#dece84',
+                                                                                            fontSize:'20px',
+                                                                                            fontWeight:400,
+                                                                                            letterSpacing:1
+                                                                                        }
+                                                                                    },
+                                                                                    content:'115'
+                                                                                },
+                                                                                {
+                                                                                    component: 'span',
+                                                                                    props:{
+                                                                                        $style:{
+                                                                                            display: 'inline-block',
+                                                                                            color:'#8f919f',
+                                                                                            fontSize:'14px',
+                                                                                            fontWeight:500,
+                                                                                            paddingLeft: '8px'
+                                                                                        }
+                                                                                    },
+                                                                                    content:'个'
+                                                                                },
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            component:'div',
+                                                                            content: '科技部项目',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    color:'#fff',
+                                                                                    fontSize:'12px',
+                                                                                    fontWeight:500,
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    ]
                                                                 }
                                                             ]
                                                         },
@@ -1284,7 +1412,6 @@ module.exports = {
                                                         $style: {
                                                             width: '261px',
                                                             height: '46px',
-                                                            $border: `'1px solid white'`,
                                                             marginTop: '17px',
                                                             display: 'flex',
                                                             justifyContent: 'space-between',
@@ -1300,7 +1427,6 @@ module.exports = {
                                                                     height: '46px',
                                                                     display: 'flex',
                                                                     justifyContent: 'space-between',
-                                                                    $border: `'1px solid yellow'`,
                                                                 }
                                                             },
                                                             children: [
@@ -1341,9 +1467,52 @@ module.exports = {
                                                                         $style: {
                                                                             width: '100px',
                                                                             height: '46px',
-                                                                            $border: `'1px solid red'`,
                                                                         }
-                                                                    }
+                                                                    },
+                                                                    children: [
+                                                                        {
+                                                                            component:'div',
+                                                                            children: [
+                                                                                {
+                                                                                    component: 'span',
+                                                                                    props:{
+                                                                                        $style:{
+                                                                                            display: 'inline-block',
+                                                                                            color:'#dece84',
+                                                                                            fontSize:'20px',
+                                                                                            fontWeight:400,
+                                                                                            letterSpacing:1
+                                                                                        }
+                                                                                    },
+                                                                                    content:'108'
+                                                                                },
+                                                                                {
+                                                                                    component: 'span',
+                                                                                    props:{
+                                                                                        $style:{
+                                                                                            display: 'inline-block',
+                                                                                            color:'#8f919f',
+                                                                                            fontSize:'14px',
+                                                                                            fontWeight:500,
+                                                                                            paddingLeft: '8px'
+                                                                                        }
+                                                                                    },
+                                                                                    content:'个'
+                                                                                },
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            component:'div',
+                                                                            content: '软件著作',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    color:'#fff',
+                                                                                    fontSize:'12px',
+                                                                                    fontWeight:500,
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    ]
                                                                 }
                                                             ]
                                                         },
@@ -1356,7 +1525,6 @@ module.exports = {
                                                                     height: '46px',
                                                                     display: 'flex',
                                                                     justifyContent: 'space-between',
-                                                                    $border: `'1px solid yellow'`,
                                                                 }
                                                             },
                                                             children: [
@@ -1397,9 +1565,52 @@ module.exports = {
                                                                         $style: {
                                                                             width: '70px',
                                                                             height: '46px',
-                                                                            $border: `'1px solid red'`,
                                                                         }
-                                                                    }
+                                                                    },
+                                                                    children: [
+                                                                        {
+                                                                            component:'div',
+                                                                            children: [
+                                                                                {
+                                                                                    component: 'span',
+                                                                                    props:{
+                                                                                        $style:{
+                                                                                            display: 'inline-block',
+                                                                                            color:'#dece84',
+                                                                                            fontSize:'20px',
+                                                                                            fontWeight:400,
+                                                                                            letterSpacing:1
+                                                                                        }
+                                                                                    },
+                                                                                    content:'90'
+                                                                                },
+                                                                                {
+                                                                                    component: 'span',
+                                                                                    props:{
+                                                                                        $style:{
+                                                                                            display: 'inline-block',
+                                                                                            color:'#8f919f',
+                                                                                            fontSize:'14px',
+                                                                                            fontWeight:500,
+                                                                                            paddingLeft:'8px'
+                                                                                        }
+                                                                                    },
+                                                                                    content:'个'
+                                                                                },
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            component:'div',
+                                                                            content: '农业部项目',
+                                                                            props:{
+                                                                                $style:{
+                                                                                    color:'#fff',
+                                                                                    fontSize:'12px',
+                                                                                    fontWeight:500,
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    ]
                                                                 }
                                                             ]
                                                         },

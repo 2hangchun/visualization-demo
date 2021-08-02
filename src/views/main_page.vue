@@ -31,7 +31,7 @@
                       亿元
                     </span>
                   </div>
-                  <div :style="{color: '#fff', fontsize: '14px', fontWeight: '500', marginTop: '-9px'}">
+                  <div :style="{color: '#fff', fontSize: '14px', fontWeight: '500', marginTop: '-9px'}">
                     园区总产值
                   </div>
                 </div>
@@ -52,7 +52,7 @@
                       亿元
                     </span>
                   </div>
-                  <div :style="{color: '#fff', fontsize: '14px', fontWeight: '500', marginTop: '-9px'}">
+                  <div :style="{color: '#fff', fontSize: '14px', fontWeight: '500', marginTop: '-9px'}">
                     园区总投资
                   </div>
                 </div>
@@ -78,11 +78,11 @@
                     <span :style="{display: 'inline-block', color: '#dece84', fontSize: '40px', fontWeight: '400', letterSpacing: '1'}">
                       1,948
                     </span>
-                    <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500'}">
+                    <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500', paddingLeft: '8px'}">
                       个
                     </span>
                   </div>
-                  <div :style="{color: '#fff', fontsize: '14px', fontWeight: '500', marginTop: '-4px'}">
+                  <div :style="{color: '#fff', fontSize: '14px', fontWeight: '500', marginTop: '-4px'}">
                     技术成果
                   </div>
                 </div>
@@ -96,11 +96,11 @@
                     <span :style="{display: 'inline-block', color: '#dece84', fontSize: '20px', fontWeight: '400', letterSpacing: '1'}">
                       670
                     </span>
-                    <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500'}">
+                    <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500', paddingLeft: '8px'}">
                       个
                     </span>
                   </div>
-                  <div :style="{color: '#fff', fontsize: '12px', fontWeight: '500', marginTop: '-4px'}">
+                  <div :style="{color: '#fff', fontSize: '12px', fontWeight: '500', marginTop: '-4px'}">
                     基础理论成果
                   </div>
                 </div>
@@ -114,11 +114,11 @@
                     <span :style="{display: 'inline-block', color: '#dece84', fontSize: '20px', fontWeight: '400', letterSpacing: '1'}">
                       800
                     </span>
-                    <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500'}">
+                    <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500', paddingLeft: '8px'}">
                       个
                     </span>
                   </div>
-                  <div :style="{color: '#fff', fontsize: '12px', fontWeight: '500', marginTop: '-4px'}">
+                  <div :style="{color: '#fff', fontSize: '12px', fontWeight: '500', marginTop: '-4px'}">
                     应用技术成果
                   </div>
                 </div>
@@ -132,11 +132,11 @@
                     <span :style="{display: 'inline-block', color: '#dece84', fontSize: '20px', fontWeight: '400', letterSpacing: '1'}">
                       478
                     </span>
-                    <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500'}">
+                    <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500', paddingLeft: '8px'}">
                       个
                     </span>
                   </div>
-                  <div :style="{color: '#fff', fontsize: '12px', fontWeight: '500', marginTop: '-4px'}">
+                  <div :style="{color: '#fff', fontSize: '12px', fontWeight: '500', marginTop: '-4px'}">
                     软科学成果
                   </div>
                 </div>
@@ -302,39 +302,99 @@
             </div>
           </div>
           <div class="container__bottom__left-bottom__bottom" :style="{width: '958px', height: '274px', margin: '52px 0 0 30px', display: 'flex'}">
-            <div class="container__bottom__left-bottom__bottom__left" :style="{width: '261px', height: '218px', marginTop: '5px', border: '1px solid red'}">
-              <div class="container__bottom__left-bottom__bottom__left__top" :style="{width: '221px', height: '75px', border: '1px solid white', display: 'flex', justifyContent: 'space-between'}">
+            <div class="container__bottom__left-bottom__bottom__left" :style="{width: '261px', height: '218px', marginTop: '5px'}">
+              <div class="container__bottom__left-bottom__bottom__left__top" :style="{width: '221px', height: '75px', display: 'flex', justifyContent: 'space-between'}">
                 <div :style="{width: '66px', height: '66px', marginTop: '4px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#19284b'}">
                   <img :style="{width: '30px', height: '30px'}" src="../../public/demo/image/Icon-Project02.svg" alt="pic" />
                 </div>
-                <div :style="{width: '140px', height: '75px', border: '1px solid green'}" />
+                <div :style="{width: '140px', height: '75px'}">
+                  <div>
+                    <span :style="{display: 'inline-block', color: '#dece84', fontSize: '40px', fontWeight: '400', letterSpacing: '1'}">
+                      423
+                    </span>
+                    <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500', paddingLeft: '8px'}">
+                      个
+                    </span>
+                  </div>
+                  <div :style="{color: '#fff', fontSize: '14px', fontWeight: '500'}">
+                    申报数量
+                  </div>
+                </div>
               </div>
-              <div class="container__bottom__left-bottom__bottom__left__middle" :style="{width: '261px', height: '46px', border: '1px solid white', marginTop: '34px', display: 'flex', justifyContent: 'space-between'}">
-                <div class="container__bottom__left-bottom__bottom__left__middle__left" :style="{width: '143px', height: '46px', display: 'flex', justifyContent: 'space-between', border: '1px solid yellow'}">
+              <div class="container__bottom__left-bottom__bottom__left__middle" :style="{width: '261px', height: '46px', marginTop: '34px', display: 'flex', justifyContent: 'space-between'}">
+                <div class="container__bottom__left-bottom__bottom__left__middle__left" :style="{width: '143px', height: '46px', display: 'flex', justifyContent: 'space-between'}">
                   <div class="container__bottom__left-bottom__bottom__left__middle__left__left" :style="{width: '36px', height: '36px', marginTop: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#19284b'}">
                     <img :style="{width: '14px', height: '14px'}" src="../../public/demo/image/Icon-Project.svg" alt="pic" />
                   </div>
-                  <div class="container__bottom__left-bottom__bottom__left__middle__left__right" :style="{width: '100px', height: '46px', border: '1px solid red'}" />
+                  <div class="container__bottom__left-bottom__bottom__left__middle__left__right" :style="{width: '100px', height: '46px'}">
+                    <div>
+                      <span :style="{display: 'inline-block', color: '#dece84', fontSize: '20px', fontWeight: '400', letterSpacing: '1'}">
+                        170
+                      </span>
+                      <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500', paddingLeft: '8px'}">
+                        个
+                      </span>
+                    </div>
+                    <div :style="{color: '#fff', fontSize: '12px', fontWeight: '500'}">
+                      国家发改委项目
+                    </div>
+                  </div>
                 </div>
-                <div class="container__bottom__left-bottom__bottom__left__middle__right" :style="{width: '112px', height: '46px', display: 'flex', justifyContent: 'space-between', border: '1px solid yellow'}">
+                <div class="container__bottom__left-bottom__bottom__left__middle__right" :style="{width: '112px', height: '46px', display: 'flex', justifyContent: 'space-between'}">
                   <div class="container__bottom__left-bottom__bottom__left__middle__right__left" :style="{width: '36px', height: '36px', marginTop: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#19284b'}">
                     <img :style="{width: '14px', height: '14px'}" src="../../public/demo/image/Icon-Tech.svg" alt="pic" />
                   </div>
-                  <div class="container__bottom__left-bottom__bottom__left__middle__right__right" :style="{width: '70px', height: '46px', border: '1px solid red'}" />
+                  <div class="container__bottom__left-bottom__bottom__left__middle__right__right" :style="{width: '70px', height: '46px'}">
+                    <div>
+                      <span :style="{display: 'inline-block', color: '#dece84', fontSize: '20px', fontWeight: '400', letterSpacing: '1'}">
+                        115
+                      </span>
+                      <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500', paddingLeft: '8px'}">
+                        个
+                      </span>
+                    </div>
+                    <div :style="{color: '#fff', fontSize: '12px', fontWeight: '500'}">
+                      科技部项目
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="container__bottom__left-bottom__bottom__left__bottom" :style="{width: '261px', height: '46px', border: '1px solid white', marginTop: '17px', display: 'flex', justifyContent: 'space-between'}">
-                <div class="container__bottom__left-bottom__bottom__left__bottom__left" :style="{width: '143px', height: '46px', display: 'flex', justifyContent: 'space-between', border: '1px solid yellow'}">
+              <div class="container__bottom__left-bottom__bottom__left__bottom" :style="{width: '261px', height: '46px', marginTop: '17px', display: 'flex', justifyContent: 'space-between'}">
+                <div class="container__bottom__left-bottom__bottom__left__bottom__left" :style="{width: '143px', height: '46px', display: 'flex', justifyContent: 'space-between'}">
                   <div class="container__bottom__left-bottom__bottom__left__bottom__left__left" :style="{width: '36px', height: '36px', marginTop: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#19284b'}">
                     <img :style="{width: '14px', height: '14px'}" src="../../public/demo/image/Icon-Sort.svg" alt="pic" />
                   </div>
-                  <div class="container__bottom__left-bottom__bottom__left__bottom__left__right" :style="{width: '100px', height: '46px', border: '1px solid red'}" />
+                  <div class="container__bottom__left-bottom__bottom__left__bottom__left__right" :style="{width: '100px', height: '46px'}">
+                    <div>
+                      <span :style="{display: 'inline-block', color: '#dece84', fontSize: '20px', fontWeight: '400', letterSpacing: '1'}">
+                        108
+                      </span>
+                      <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500', paddingLeft: '8px'}">
+                        个
+                      </span>
+                    </div>
+                    <div :style="{color: '#fff', fontSize: '12px', fontWeight: '500'}">
+                      软件著作
+                    </div>
+                  </div>
                 </div>
-                <div class="container__bottom__left-bottom__bottom__left__bottom__right" :style="{width: '112px', height: '46px', display: 'flex', justifyContent: 'space-between', border: '1px solid yellow'}">
+                <div class="container__bottom__left-bottom__bottom__left__bottom__right" :style="{width: '112px', height: '46px', display: 'flex', justifyContent: 'space-between'}">
                   <div class="container__bottom__left-bottom__bottom__left__bottom__right__left" :style="{width: '36px', height: '36px', marginTop: '5px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '50%', backgroundColor: '#19284b'}">
                     <img :style="{width: '14px', height: '14px'}" src="../../public/demo/image/Icon-Sapling.svg" alt="pic" />
                   </div>
-                  <div class="container__bottom__left-bottom__bottom__left__bottom__right__right" :style="{width: '70px', height: '46px', border: '1px solid red'}" />
+                  <div class="container__bottom__left-bottom__bottom__left__bottom__right__right" :style="{width: '70px', height: '46px'}">
+                    <div>
+                      <span :style="{display: 'inline-block', color: '#dece84', fontSize: '20px', fontWeight: '400', letterSpacing: '1'}">
+                        90
+                      </span>
+                      <span :style="{display: 'inline-block', color: '#8f919f', fontSize: '14px', fontWeight: '500', paddingLeft: '8px'}">
+                        个
+                      </span>
+                    </div>
+                    <div :style="{color: '#fff', fontSize: '12px', fontWeight: '500'}">
+                      农业部项目
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
